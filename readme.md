@@ -21,7 +21,7 @@ The list of projects which need to be manually downloaded and installed are:
 * [Tabletop API library][]
 
 ### Getting the code
-The GitHub project is found at http://github.com/Bernardo-MG/Tabletop-Pendragon-API, and it includes the git clone uri.
+The GitHub project is found at http://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-API, and it includes the git clone uri.
 
 ## License
 The project is released under version 2.0 of the [Apache License][].
