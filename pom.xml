@@ -69,7 +69,7 @@
 		<plugin.reports.version>2.7</plugin.reports.version>
 		<plugin.surefire.version>2.17</plugin.surefire.version>
 		<!-- Manifest data -->
-		<manifest.name>com/wandrell/tabletop/api</manifest.name>
+		<manifest.name>com/wandrell/tabletop/punkapocalyptic/api</manifest.name>
 	</properties>
 
 	<dependencies>
