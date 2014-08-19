@@ -7,17 +7,18 @@ import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface Band extends NewInstantiable {
-    
-    public Band createNewInstance();
-    
-    public Collection<Unit> getUnits();
-    
+
     public void addUnit(final Unit unit);
-    
+
     public void clearUnits();
-    
-    public ValueHandler<Integer> getBullets();
-    
+
+    @Override
+    public Band createNewInstance();
+
+    public ValueHandler getBullets();
+
     public Faction getFaction();
+
+    public Collection<Unit> getUnits();
 
 }

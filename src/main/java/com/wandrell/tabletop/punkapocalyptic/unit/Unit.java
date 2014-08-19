@@ -10,46 +10,47 @@ import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface Unit extends NewInstantiable {
-    
+
     public void addEquipment(final Equipment equipment);
+
+    public void addRule(final SpecialRule rule);
+
+    public void addWeapon(final Weapon weapon);
 
     public void clearEquipment();
 
-    public Unit createNewInstance();
-    
-    public void addRule(final SpecialRule rule);
-    
-    public void addWeapon(final Weapon weapon);
-    
-    public void clearWeapons();
-    
     public void clearRules();
 
-    public ValueHandler<Integer> getActions();
-    
-    public ValueHandler<Integer> getAgility();
-    
+    public void clearWeapons();
+
+    @Override
+    public Unit createNewInstance();
+
+    public ValueHandler getActions();
+
+    public ValueHandler getAgility();
+
     public Armor getArmor();
 
-    public ValueHandler<Integer> getCombat();
+    public ValueHandler getCombat();
 
     public Collection<Equipment> getEquipment();
 
-    public ValueHandler<Integer> getFreeWeaponSlots();
+    public ValueHandler getFreeWeaponSlots();
 
     public String getName();
 
-    public ValueHandler<Integer> getPrecision();
+    public ValueHandler getPrecision();
 
     public Collection<SpecialRule> getSpecialRules();
 
-    public ValueHandler<Integer> getStrength();
+    public ValueHandler getStrength();
 
-    public ValueHandler<Integer> getTech();
+    public ValueHandler getTech();
 
-    public ValueHandler<Integer> getToughness();
+    public ValueHandler getToughness();
 
-    public ValueHandler<Integer> getValoration();
+    public ValueHandler getValoration();
 
     public Collection<Weapon> getWeapons();
 

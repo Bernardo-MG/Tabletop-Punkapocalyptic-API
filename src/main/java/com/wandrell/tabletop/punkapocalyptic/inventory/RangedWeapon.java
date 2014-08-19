@@ -4,11 +4,11 @@ public interface RangedWeapon extends Weapon {
 
     public interface RangedDistance {
 
-	public Integer getLongDistance();
+        public Integer getLongDistance();
 
-	public Integer getMediumDistance();
+        public Integer getMediumDistance();
 
-	public Integer getShortDistance();
+        public Integer getShortDistance();
 
     }
 
