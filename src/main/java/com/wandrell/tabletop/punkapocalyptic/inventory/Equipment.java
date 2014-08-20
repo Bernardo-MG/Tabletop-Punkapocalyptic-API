@@ -15,8 +15,19 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.inventory;
 
+/**
+ * Represents a piece of equipment.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface Equipment {
 
+    /**
+     * Returns the equipment's name.
+     * 
+     * @return the equipment's name
+     */
     public String getName();
 
 }

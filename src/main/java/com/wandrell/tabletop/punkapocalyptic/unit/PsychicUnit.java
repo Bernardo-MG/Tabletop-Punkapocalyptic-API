@@ -19,11 +19,22 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.mutation.PsychicPower;
 
+/**
+ * Represents a unit with psychic powers.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface PsychicUnit extends Unit {
 
     @Override
     public PsychicUnit createNewInstance();
 
+    /**
+     * Returns all the psychic powers the unit has.
+     * 
+     * @return all the unit's psychic powers
+     */
     public Collection<PsychicPower> getPsychicPowers();
 
 }

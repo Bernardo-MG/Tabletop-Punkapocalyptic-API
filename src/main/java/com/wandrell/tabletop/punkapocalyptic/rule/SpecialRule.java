@@ -15,8 +15,19 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.rule;
 
+/**
+ * Represents a special rule.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface SpecialRule {
 
+    /**
+     * Returns the rule's name.
+     * 
+     * @return the rule's name
+     */
     public String getName();
 
 }

@@ -21,19 +21,50 @@ import com.wandrell.tabletop.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
+/**
+ * Represents a band composed by a group of units, and all the other data
+ * associated to it.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface Band extends NewInstantiable {
 
+    /**
+     * Adds a unit to the band.
+     * 
+     * @param unit
+     *            the unit to add
+     */
     public void addUnit(final Unit unit);
 
+    /**
+     * Removes all the units from the band.
+     */
     public void clearUnits();
 
     @Override
     public Band createNewInstance();
 
+    /**
+     * Returns the number of bullets globally assigned to the band.
+     * 
+     * @return the number of bullets globally assigned
+     */
     public ValueHandler getBullets();
 
+    /**
+     * The band's faction.
+     * 
+     * @return the band's faction
+     */
     public Faction getFaction();
 
+    /**
+     * The band units.
+     * 
+     * @return the band units
+     */
     public Collection<Unit> getUnits();
 
 }

@@ -19,14 +19,40 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.rule.SpecialRule;
 
+/**
+ * Represents a weapon.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface Weapon {
 
+    /**
+     * Returns the weapon's name.
+     * 
+     * @return the weapon's name
+     */
     public String getName();
 
+    /**
+     * Returns the weapon's penetration value.
+     * 
+     * @return the weapon's penetration value
+     */
     public Integer getPenetration();
 
+    /**
+     * Returns the special rules assigned to the weapon.
+     * 
+     * @return the special rules assigned to the weapon
+     */
     public Collection<SpecialRule> getSpecialRules();
 
+    /**
+     * Returns the weapon's strength.
+     * 
+     * @return the weapon's strength
+     */
     public Integer getStrength();
 
 }

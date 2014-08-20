@@ -19,12 +19,33 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.rule.SpecialRule;
 
+/**
+ * Represents a piece of armor.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface Armor {
 
+    /**
+     * Returns the armor value.
+     * 
+     * @return the armor value
+     */
     public Integer getArmor();
 
+    /**
+     * Returns the armor's name.
+     * 
+     * @return the armor's name
+     */
     public String getName();
 
+    /**
+     * Returns the special rules assigned to the armor.
+     * 
+     * @return the special rules assigned to the armor
+     */
     public Collection<SpecialRule> getSpecialRules();
 
 }

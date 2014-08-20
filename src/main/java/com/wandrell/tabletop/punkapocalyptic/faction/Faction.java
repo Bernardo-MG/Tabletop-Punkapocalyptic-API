@@ -19,10 +19,26 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.unit.AvailabilityUnit;
 
+/**
+ * Represents a faction.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface Faction {
 
+    /**
+     * Returns the units available to the faction.
+     * 
+     * @return the units available to the faction
+     */
     public Collection<AvailabilityUnit> getAvailableUnits();
 
+    /**
+     * Returns the faction's name.
+     * 
+     * @return the faction's name
+     */
     public String getName();
 
 }

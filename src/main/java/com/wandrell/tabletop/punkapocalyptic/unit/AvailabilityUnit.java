@@ -20,10 +20,26 @@ import java.util.Collection;
 import com.wandrell.tabletop.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.punkapocalyptic.inventory.Weapon;
 
+/**
+ * Represents a unit along it's available options.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface AvailabilityUnit extends Unit {
 
-    public Collection<Armor> getArmorsSelection();
+    /**
+     * Returns the armor options.
+     * 
+     * @return the armor options
+     */
+    public Collection<Armor> getArmorOptions();
 
-    public Collection<Weapon> getWeaponsSelection();
+    /**
+     * Returns the weapon options.
+     * 
+     * @return the weapon options
+     */
+    public Collection<Weapon> getWeaponOptions();
 
 }

@@ -15,12 +15,33 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.mutation;
 
+/**
+ * Represents a psychic power.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface PsychicPower {
 
+    /**
+     * Returns the power's distance in imperial units.
+     * 
+     * @return the power's distance in imperial units
+     */
     public Integer getDistanceImperialUnits();
 
+    /**
+     * Returns the power's distance in metric units.
+     * 
+     * @return the power's distance in metric units
+     */
     public Integer getDistanceMetricSystem();
 
+    /**
+     * Returns the psychic power's name.
+     * 
+     * @return the psychic power's name
+     */
     public String getName();
 
 }

@@ -19,11 +19,22 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.mutation.Mutation;
 
+/**
+ * Represents a unit with mutations.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface MutantUnit extends Unit {
 
     @Override
     public MutantUnit createNewInstance();
 
+    /**
+     * Returns all the mutations the unit has.
+     * 
+     * @return all the unit's mutations
+     */
     public Collection<Mutation> getMutations();
 
 }

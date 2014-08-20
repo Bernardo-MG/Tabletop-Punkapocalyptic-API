@@ -15,20 +15,56 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.inventory;
 
+/**
+ * Represents a ranged weapon.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface RangedWeapon extends Weapon {
 
+    /**
+     * 
+     * @author Bernardo Martínez Garrido
+     * @version 0.1.0
+     */
     public interface RangedDistance {
 
+        /**
+         * Returns the long distance value.
+         * 
+         * @return the long distance value
+         */
         public Integer getLongDistance();
 
+        /**
+         * Returns the medium distance value.
+         * 
+         * @return the medium distance value
+         */
         public Integer getMediumDistance();
 
+        /**
+         * Returns the short distance value.
+         * 
+         * @return the short distance value
+         */
         public Integer getShortDistance();
 
     }
 
+    /**
+     * Returns the distance ranges in imperial units.
+     * 
+     * @return the distance ranges in imperial units
+     */
     public RangedDistance getDistancesImperialUnits();
 
+    /**
+     * Returns the distance ranges in metric units.
+     * 
+     * @return the distance ranges in metric units
+     */
     public RangedDistance getDistancesMetricSystem();
 
 }

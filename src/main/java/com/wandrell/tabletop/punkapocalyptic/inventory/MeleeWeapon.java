@@ -15,8 +15,19 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.inventory;
 
+/**
+ * Represents a melee weapon.
+ * 
+ * @author Bernardo Martínez Garrido
+ * @version 0.1.0
+ */
 public interface MeleeWeapon extends Weapon {
 
+    /**
+     * Returns the combat modifier.
+     * 
+     * @return the combat modifier
+     */
     public Integer getCombatModifier();
 
 }
