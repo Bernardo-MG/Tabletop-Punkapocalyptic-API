@@ -30,4 +30,18 @@ public interface MeleeWeapon extends Weapon {
      */
     public Integer getCombatModifier();
 
+    /**
+     * Returns the weapon's penetration value.
+     * 
+     * @return the weapon's penetration value
+     */
+    public Integer getPenetration();
+
+    /**
+     * Returns the weapon's strength.
+     * 
+     * @return the weapon's strength
+     */
+    public Integer getStrength();
+
 }

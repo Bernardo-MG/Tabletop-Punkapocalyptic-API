@@ -117,13 +117,6 @@ public interface Unit extends NewInstantiable {
     public ValueHandler getFreeWeaponSlots();
 
     /**
-     * Returns the unit's name
-     * 
-     * @return the unit's name
-     */
-    public String getName();
-
-    /**
      * Returns the precision attribute.
      * 
      * @return the precision attribute
@@ -157,6 +150,13 @@ public interface Unit extends NewInstantiable {
      * @return the toughness attribute
      */
     public ValueHandler getToughness();
+
+    /**
+     * Returns the unit's name
+     * 
+     * @return the unit's name
+     */
+    public String getUnitName();
 
     /**
      * Return's the unit's valoration.

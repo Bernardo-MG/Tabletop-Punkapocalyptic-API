@@ -28,6 +28,13 @@ import com.wandrell.tabletop.punkapocalyptic.rule.SpecialRule;
 public interface Weapon {
 
     /**
+     * Returns the cost of the weapon.
+     * 
+     * @return the cost of the weapon
+     */
+    public Integer getCost();
+
+    /**
      * Returns the weapon's name.
      * 
      * @return the weapon's name
@@ -35,24 +42,10 @@ public interface Weapon {
     public String getName();
 
     /**
-     * Returns the weapon's penetration value.
-     * 
-     * @return the weapon's penetration value
-     */
-    public Integer getPenetration();
-
-    /**
      * Returns the special rules assigned to the weapon.
      * 
      * @return the special rules assigned to the weapon
      */
     public Collection<SpecialRule> getSpecialRules();
-
-    /**
-     * Returns the weapon's strength.
-     * 
-     * @return the weapon's strength
-     */
-    public Integer getStrength();
 
 }

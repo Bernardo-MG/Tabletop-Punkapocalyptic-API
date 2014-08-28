@@ -67,4 +67,46 @@ public interface RangedWeapon extends Weapon {
      */
     public RangedDistance getDistancesMetricSystem();
 
+    /**
+     * Returns the penetration for long distances.
+     * 
+     * @return the penetration for long distances
+     */
+    public Integer getLongPenetration();
+
+    /**
+     * Returns the strength for long distances.
+     * 
+     * @return the strength for long distances
+     */
+    public Integer getLongStrength();
+
+    /**
+     * Returns the penetration for medium distances.
+     * 
+     * @return the penetration for medium distances
+     */
+    public Integer getMediumPenetration();
+
+    /**
+     * Returns the strength for medium distances.
+     * 
+     * @return the strength for medium distances
+     */
+    public Integer getMediumStrength();
+
+    /**
+     * Returns the penetration for short distances.
+     * 
+     * @return the penetration for short distances
+     */
+    public Integer getShortPenetration();
+
+    /**
+     * Returns the strength for short distances.
+     * 
+     * @return the strength for short distances
+     */
+    public Integer getShortStrength();
+
 }
