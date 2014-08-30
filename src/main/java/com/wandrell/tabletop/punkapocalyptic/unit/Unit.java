@@ -96,6 +96,13 @@ public interface Unit extends NewInstantiable {
     public Armor getArmor();
 
     /**
+     * Return's the unit's base cost.
+     * 
+     * @return the unit's base cost
+     */
+    public Integer getBaseCost();
+
+    /**
      * Returns the combat attribute.
      * 
      * @return the combat attribute
