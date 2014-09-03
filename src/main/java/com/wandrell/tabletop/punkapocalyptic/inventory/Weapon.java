@@ -35,6 +35,13 @@ public interface Weapon {
     public Integer getCost();
 
     /**
+     * Returns the number of hands required to use the weapon.
+     * 
+     * @return the number of hands required to use the weapon
+     */
+    public Integer getHands();
+
+    /**
      * Returns the weapon's name.
      * 
      * @return the weapon's name

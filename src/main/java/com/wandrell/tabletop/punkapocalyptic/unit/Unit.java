@@ -124,6 +124,13 @@ public interface Unit extends NewInstantiable {
     public ValueHandler getFreeWeaponSlots();
 
     /**
+     * Returns the maximum number of weapon slots allowed.
+     * 
+     * @return the maximum number of weapon slots
+     */
+    public Integer getMaxWeaponSlots();
+
+    /**
      * Returns the precision attribute.
      * 
      * @return the precision attribute
