@@ -67,4 +67,11 @@ public interface Band extends NewInstantiable {
      */
     public Collection<Unit> getUnits();
 
+    /**
+     * Returns the band's valoration.
+     * 
+     * @return the band's valoration
+     */
+    public ValueHandler getValoration();
+
 }
