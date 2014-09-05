@@ -13,35 +13,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.inventory;
+package com.wandrell.tabletop.model.punkapocalyptic.mutation;
 
 /**
- * Represents a melee weapon.
+ * Represents a psychic power.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface MeleeWeapon extends Weapon {
+public interface PsychicPower {
 
     /**
-     * Returns the combat modifier.
+     * Returns the power's distance in imperial units.
      * 
-     * @return the combat modifier
+     * @return the power's distance in imperial units
      */
-    public Integer getCombatModifier();
+    public Integer getDistanceImperialUnits();
 
     /**
-     * Returns the weapon's penetration value.
+     * Returns the power's distance in metric units.
      * 
-     * @return the weapon's penetration value
+     * @return the power's distance in metric units
      */
-    public Integer getPenetration();
+    public Integer getDistanceMetricSystem();
 
     /**
-     * Returns the weapon's strength.
+     * Returns the psychic power's name.
      * 
-     * @return the weapon's strength
+     * @return the psychic power's name
      */
-    public Integer getStrength();
+    public String getName();
 
 }

@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.wandrell</groupId>
+	<groupId>com.wandrell.tabletop</groupId>
 	<artifactId>tabletop-punkapocalyptic-api</artifactId>
 	<version>alpha</version>
 	<packaging>jar</packaging>
@@ -81,7 +81,7 @@
 		</dependency>
 		<dependency>
 			<!-- Tabletop API -->
-			<groupId>com.wandrell</groupId>
+			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>tabletop-api</artifactId>
 			<version>${tabletop.version}</version>
 		</dependency>

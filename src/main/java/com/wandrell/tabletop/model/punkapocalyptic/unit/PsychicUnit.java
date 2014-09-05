@@ -13,35 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.mutation;
+package com.wandrell.tabletop.model.punkapocalyptic.unit;
+
+import java.util.Collection;
+
+import com.wandrell.tabletop.model.punkapocalyptic.mutation.PsychicPower;
 
 /**
- * Represents a psychic power.
+ * Represents a unit with psychic powers.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface PsychicPower {
+public interface PsychicUnit extends Unit {
+
+    @Override
+    public PsychicUnit createNewInstance();
 
     /**
-     * Returns the power's distance in imperial units.
+     * Returns all the psychic powers the unit has.
      * 
-     * @return the power's distance in imperial units
+     * @return all the unit's psychic powers
      */
-    public Integer getDistanceImperialUnits();
-
-    /**
-     * Returns the power's distance in metric units.
-     * 
-     * @return the power's distance in metric units
-     */
-    public Integer getDistanceMetricSystem();
-
-    /**
-     * Returns the psychic power's name.
-     * 
-     * @return the psychic power's name
-     */
-    public String getName();
+    public Collection<PsychicPower> getPsychicPowers();
 
 }

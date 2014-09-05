@@ -13,20 +13,20 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.rule;
+package com.wandrell.tabletop.model.punkapocalyptic.mutation;
 
 /**
- * Represents a special rule.
+ * Represents a mutation.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface SpecialRule {
+public interface Mutation {
 
     /**
-     * Returns the rule's name.
+     * Returns the mutation's name.
      * 
-     * @return the rule's name
+     * @return the mutation's name
      */
     public String getName();
 

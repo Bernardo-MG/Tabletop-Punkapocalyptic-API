@@ -13,28 +13,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.unit;
+package com.wandrell.tabletop.model.punkapocalyptic.faction;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.punkapocalyptic.mutation.PsychicPower;
+import com.wandrell.tabletop.model.punkapocalyptic.unit.AvailabilityUnit;
 
 /**
- * Represents a unit with psychic powers.
+ * Represents a faction.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface PsychicUnit extends Unit {
-
-    @Override
-    public PsychicUnit createNewInstance();
+public interface Faction {
 
     /**
-     * Returns all the psychic powers the unit has.
+     * Returns the units available to the faction.
      * 
-     * @return all the unit's psychic powers
+     * @return the units available to the faction
      */
-    public Collection<PsychicPower> getPsychicPowers();
+    public Collection<AvailabilityUnit> getAvailableUnits();
+
+    /**
+     * Returns the faction's name.
+     * 
+     * @return the faction's name
+     */
+    public String getName();
 
 }

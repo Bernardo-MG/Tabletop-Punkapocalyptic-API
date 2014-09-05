@@ -13,28 +13,21 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.unit;
-
-import java.util.Collection;
-
-import com.wandrell.tabletop.punkapocalyptic.mutation.Mutation;
+package com.wandrell.tabletop.model.punkapocalyptic.inventory;
 
 /**
- * Represents a unit with mutations.
+ * Represents a piece of equipment.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface MutantUnit extends Unit {
-
-    @Override
-    public MutantUnit createNewInstance();
+public interface Equipment {
 
     /**
-     * Returns all the mutations the unit has.
+     * Returns the equipment's name.
      * 
-     * @return all the unit's mutations
+     * @return the equipment's name
      */
-    public Collection<Mutation> getMutations();
+    public String getName();
 
 }

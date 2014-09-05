@@ -13,21 +13,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.inventory;
+package com.wandrell.tabletop.model.punkapocalyptic.inventory;
+
+import java.util.Collection;
+
+import com.wandrell.tabletop.model.punkapocalyptic.rule.SpecialRule;
 
 /**
- * Represents a piece of equipment.
+ * Represents a piece of armor.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Equipment {
+public interface Armor {
 
     /**
-     * Returns the equipment's name.
+     * Returns the armor value.
      * 
-     * @return the equipment's name
+     * @return the armor value
+     */
+    public Integer getArmor();
+
+    /**
+     * Returns the armor's cost;
+     * 
+     * @return the armor's cost
+     */
+    public Integer getCost();
+
+    /**
+     * Returns the armor's name.
+     * 
+     * @return the armor's name
      */
     public String getName();
+
+    /**
+     * Returns the special rules assigned to the armor.
+     * 
+     * @return the special rules assigned to the armor
+     */
+    public Collection<SpecialRule> getSpecialRules();
 
 }

@@ -13,32 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.faction;
+package com.wandrell.tabletop.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.punkapocalyptic.unit.AvailabilityUnit;
+import com.wandrell.tabletop.model.punkapocalyptic.mutation.Mutation;
 
 /**
- * Represents a faction.
+ * Represents a unit with mutations.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Faction {
+public interface MutantUnit extends Unit {
+
+    @Override
+    public MutantUnit createNewInstance();
 
     /**
-     * Returns the units available to the faction.
+     * Returns all the mutations the unit has.
      * 
-     * @return the units available to the faction
+     * @return all the unit's mutations
      */
-    public Collection<AvailabilityUnit> getAvailableUnits();
-
-    /**
-     * Returns the faction's name.
-     * 
-     * @return the faction's name
-     */
-    public String getName();
+    public Collection<Mutation> getMutations();
 
 }

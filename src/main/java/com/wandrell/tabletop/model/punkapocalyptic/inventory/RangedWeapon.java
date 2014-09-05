@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.inventory;
+package com.wandrell.tabletop.model.punkapocalyptic.inventory;
 
 /**
  * Represents a ranged weapon.
