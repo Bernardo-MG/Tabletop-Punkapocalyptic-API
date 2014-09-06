@@ -20,7 +20,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.model.punkapocalyptic.rule.SpecialRule;
+import com.wandrell.tabletop.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 

@@ -19,6 +19,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.model.punkapocalyptic.inventory.Weapon;
+import com.wandrell.tabletop.model.punkapocalyptic.ruleset.UnitConstraint;
 
 /**
  * Represents a unit along it's available options.
@@ -37,6 +38,13 @@ public interface AvailabilityUnit extends Unit {
      * @return the armor options
      */
     public Collection<Armor> getArmorOptions();
+
+    /**
+     * Returns this unit's constraints.
+     * 
+     * @return this unit's constraints
+     */
+    public Collection<UnitConstraint> getConstraints();
 
     /**
      * Returns the maximum amount of weapons the unit can acquire.
