@@ -18,6 +18,7 @@ package com.wandrell.tabletop.model.punkapocalyptic.unit;
 import java.util.Collection;
 
 import com.wandrell.tabletop.model.punkapocalyptic.faction.Faction;
+import com.wandrell.tabletop.model.punkapocalyptic.unit.event.BandListener;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -29,6 +30,14 @@ import com.wandrell.util.tag.NewInstantiable;
  * @version 0.1.0
  */
 public interface Band extends NewInstantiable {
+
+    /**
+     * Adds a listener for band events.
+     * 
+     * @param listener
+     *            the listener for band events to add
+     */
+    public void addBandListener(final BandListener listener);
 
     /**
      * Adds a unit to the band.
@@ -73,5 +82,21 @@ public interface Band extends NewInstantiable {
      * @return the band's valoration
      */
     public ValueHandler getValoration();
+
+    /**
+     * Removes a listener for band events.
+     * 
+     * @param listener
+     *            the listener for band events to remove
+     */
+    public void removeBandListener(final BandListener listener);
+
+    /**
+     * Removes a unit from the band.
+     * 
+     * @param unit
+     *            the unit to remove
+     */
+    public void removeUnit(Unit unit);
 
 }
