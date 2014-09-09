@@ -19,7 +19,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.BandListener;
-import com.wandrell.tabletop.valuehandler.ValueHandler;
+import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
