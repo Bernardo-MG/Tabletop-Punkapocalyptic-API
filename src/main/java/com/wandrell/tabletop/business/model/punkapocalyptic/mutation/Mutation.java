@@ -13,35 +13,21 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.inventory;
+package com.wandrell.tabletop.business.model.punkapocalyptic.mutation;
 
 /**
- * Represents a melee weapon.
+ * Represents a mutation.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface MeleeWeapon extends Weapon {
+public interface Mutation {
 
     /**
-     * Returns the combat modifier.
+     * Returns the mutation's name.
      * 
-     * @return the combat modifier
+     * @return the mutation's name
      */
-    public Integer getCombatModifier();
-
-    /**
-     * Returns the weapon's penetration value.
-     * 
-     * @return the weapon's penetration value
-     */
-    public Integer getPenetration();
-
-    /**
-     * Returns the weapon's strength.
-     * 
-     * @return the weapon's strength
-     */
-    public Integer getStrength();
+    public String getName();
 
 }

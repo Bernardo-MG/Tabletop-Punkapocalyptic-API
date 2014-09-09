@@ -13,32 +13,21 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.unit.event;
-
-import java.util.EventListener;
+package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
 
 /**
- * Listener for reacting to band related events.
+ * Represents a special rule.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface BandListener extends EventListener {
+public interface SpecialRule {
 
     /**
-     * Reacts to a unit being added to the band.
+     * Returns the rule's name.
      * 
-     * @param e
-     *            the event
+     * @return the rule's name
      */
-    public void unitAdded(final UnitEvent e);
-
-    /**
-     * Reacts to a unit being removed from the band.
-     * 
-     * @param e
-     *            the event
-     */
-    public void unitRemoved(final UnitEvent e);
+    public String getName();
 
 }

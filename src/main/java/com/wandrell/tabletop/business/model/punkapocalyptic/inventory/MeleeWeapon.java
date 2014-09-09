@@ -13,46 +13,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.inventory;
-
-import java.util.Collection;
-
-import com.wandrell.tabletop.model.punkapocalyptic.ruleset.SpecialRule;
+package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 
 /**
- * Represents a piece of armor.
+ * Represents a melee weapon.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Armor {
+public interface MeleeWeapon extends Weapon {
 
     /**
-     * Returns the armor value.
+     * Returns the combat modifier.
      * 
-     * @return the armor value
+     * @return the combat modifier
      */
-    public Integer getArmor();
+    public Integer getCombatModifier();
 
     /**
-     * Returns the armor's cost;
+     * Returns the weapon's penetration value.
      * 
-     * @return the armor's cost
+     * @return the weapon's penetration value
      */
-    public Integer getCost();
+    public Integer getPenetration();
 
     /**
-     * Returns the armor's name.
+     * Returns the weapon's strength.
      * 
-     * @return the armor's name
+     * @return the weapon's strength
      */
-    public String getName();
-
-    /**
-     * Returns the special rules assigned to the armor.
-     * 
-     * @return the special rules assigned to the armor
-     */
-    public Collection<SpecialRule> getSpecialRules();
+    public Integer getStrength();
 
 }

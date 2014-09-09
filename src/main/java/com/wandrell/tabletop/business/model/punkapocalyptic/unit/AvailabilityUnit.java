@@ -13,13 +13,13 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.unit;
+package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.model.punkapocalyptic.inventory.Armor;
-import com.wandrell.tabletop.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.model.punkapocalyptic.ruleset.UnitConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.UnitConstraint;
 
 /**
  * Represents a unit along it's available options.

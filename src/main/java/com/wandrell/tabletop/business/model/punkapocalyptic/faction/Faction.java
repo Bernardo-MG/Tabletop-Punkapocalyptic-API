@@ -13,11 +13,11 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.faction;
+package com.wandrell.tabletop.business.model.punkapocalyptic.faction;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.model.punkapocalyptic.unit.AvailabilityUnit;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.AvailabilityUnit;
 
 /**
  * Represents a faction.

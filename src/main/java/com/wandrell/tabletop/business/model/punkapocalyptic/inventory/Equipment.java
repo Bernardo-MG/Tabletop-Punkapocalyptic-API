@@ -13,20 +13,20 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.mutation;
+package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 
 /**
- * Represents a mutation.
+ * Represents a piece of equipment.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Mutation {
+public interface Equipment {
 
     /**
-     * Returns the mutation's name.
+     * Returns the equipment's name.
      * 
-     * @return the mutation's name
+     * @return the equipment's name
      */
     public String getName();
 

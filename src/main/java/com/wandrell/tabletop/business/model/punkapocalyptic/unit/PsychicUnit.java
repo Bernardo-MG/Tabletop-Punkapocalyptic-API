@@ -13,21 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.inventory;
+package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
+
+import java.util.Collection;
+
+import com.wandrell.tabletop.business.model.punkapocalyptic.mutation.PsychicPower;
 
 /**
- * Represents a piece of equipment.
+ * Represents a unit with psychic powers.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Equipment {
+public interface PsychicUnit extends Unit {
+
+    @Override
+    public PsychicUnit createNewInstance();
 
     /**
-     * Returns the equipment's name.
+     * Returns all the psychic powers the unit has.
      * 
-     * @return the equipment's name
+     * @return all the unit's psychic powers
      */
-    public String getName();
+    public Collection<PsychicPower> getPsychicPowers();
 
 }

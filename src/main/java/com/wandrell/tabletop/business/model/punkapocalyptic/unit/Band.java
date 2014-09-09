@@ -13,12 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.model.punkapocalyptic.unit;
+package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.model.punkapocalyptic.faction.Faction;
-import com.wandrell.tabletop.model.punkapocalyptic.unit.event.BandListener;
+import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.BandListener;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
