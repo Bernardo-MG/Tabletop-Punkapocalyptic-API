@@ -35,7 +35,7 @@ public interface Armor {
     public Integer getArmor();
 
     /**
-     * Returns the armor's cost;
+     * Returns the armor's cost.
      * 
      * @return the armor's cost
      */

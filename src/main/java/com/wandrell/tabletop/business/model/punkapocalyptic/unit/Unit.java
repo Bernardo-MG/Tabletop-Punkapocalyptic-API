@@ -158,7 +158,7 @@ public interface Unit extends NewInstantiable {
     public ValueHandler getToughness();
 
     /**
-     * Returns the unit's name
+     * Returns the unit's name.
      * 
      * @return the unit's name
      */

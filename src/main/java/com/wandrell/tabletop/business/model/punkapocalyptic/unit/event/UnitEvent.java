@@ -34,7 +34,7 @@ public final class UnitEvent extends EventObject {
     /**
      * The event related unit.
      */
-    private final Unit        unit;
+    private final Unit        eventUnit;
 
     /**
      * Constructs an event with the specified parameters.
@@ -47,7 +47,11 @@ public final class UnitEvent extends EventObject {
     public UnitEvent(final Object source, final Unit unit) {
         super(source);
 
-        this.unit = unit;
+        if (unit == null) {
+            throw new NullPointerException("Received a null pointer as unit");
+        }
+
+        eventUnit = unit;
     }
 
     /**
@@ -56,7 +60,7 @@ public final class UnitEvent extends EventObject {
      * @return the event related unit
      */
     public final Unit getUnit() {
-        return unit;
+        return eventUnit;
     }
 
 }
