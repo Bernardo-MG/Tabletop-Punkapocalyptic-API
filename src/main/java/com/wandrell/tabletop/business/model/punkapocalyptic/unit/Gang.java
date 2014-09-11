@@ -29,7 +29,7 @@ import com.wandrell.util.tag.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Band extends NewInstantiable {
+public interface Gang extends NewInstantiable {
 
     /**
      * Adds a listener for band events.
@@ -53,7 +53,7 @@ public interface Band extends NewInstantiable {
     public void clearUnits();
 
     @Override
-    public Band createNewInstance();
+    public Gang createNewInstance();
 
     /**
      * Returns the number of bullets globally assigned to the band.
