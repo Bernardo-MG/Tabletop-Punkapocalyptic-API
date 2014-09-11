@@ -41,14 +41,6 @@ public interface Unit extends NewInstantiable {
     public void addEquipment(final Equipment equipment);
 
     /**
-     * Adds a special rule.
-     * 
-     * @param rule
-     *            the special rule to add
-     */
-    public void addRule(final SpecialRule rule);
-
-    /**
      * Adds a weapon.
      * 
      * @param weapon

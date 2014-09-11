@@ -13,28 +13,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
+package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
 
-import java.util.Collection;
-
-import com.wandrell.tabletop.business.model.punkapocalyptic.mutation.Mutation;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 
 /**
- * Represents a unit with mutations.
+ * Represents a constraint applied to a unit during the list creation.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface MutantUnit extends Unit {
-
-    @Override
-    public MutantUnit createNewInstance();
+public interface ArmyBuilderUnitConstraint {
 
     /**
-     * Returns all the mutations the unit has.
+     * Returns the error message for this constraint.
      * 
-     * @return all the unit's mutations
+     * @return the constraint's error message
      */
-    public Collection<Mutation> getMutations();
+    public String getErrorMessage();
+
+    /**
+     * Checks if the constraint validates.
+     * 
+     * @param band
+     *            the band containing the unit
+     * @return {@code true} if it validates, {@code false} otherwise
+     */
+    public Boolean isValid(final Gang band);
 
 }

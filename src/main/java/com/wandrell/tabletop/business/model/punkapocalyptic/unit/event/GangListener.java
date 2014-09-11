@@ -13,35 +13,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.mutation;
+package com.wandrell.tabletop.business.model.punkapocalyptic.unit.event;
+
+import java.util.EventListener;
 
 /**
- * Represents a psychic power.
+ * Listener for reacting to band related events.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface PsychicPower {
+public interface GangListener extends EventListener {
 
     /**
-     * Returns the power's distance in imperial units.
+     * Reacts to a unit being added to the band.
      * 
-     * @return the power's distance in imperial units
+     * @param e
+     *            the event
      */
-    public Integer getDistanceImperialUnits();
+    public void unitAdded(final UnitEvent e);
 
     /**
-     * Returns the power's distance in metric units.
+     * Reacts to a unit being removed from the band.
      * 
-     * @return the power's distance in metric units
+     * @param e
+     *            the event
      */
-    public Integer getDistanceMetricSystem();
-
-    /**
-     * Returns the psychic power's name.
-     * 
-     * @return the psychic power's name
-     */
-    public String getName();
+    public void unitRemoved(final UnitEvent e);
 
 }
