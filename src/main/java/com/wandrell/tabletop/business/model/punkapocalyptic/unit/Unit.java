@@ -113,7 +113,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the free weapon slots
      */
-    public EditableValueHandler getFreeWeaponSlots();
+    public Integer getFreeWeaponSlots();
 
     /**
      * Returns the maximum number of weapon slots allowed.
