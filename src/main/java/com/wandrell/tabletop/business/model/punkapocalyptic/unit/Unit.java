@@ -21,7 +21,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
+import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
@@ -54,11 +54,6 @@ public interface Unit extends NewInstantiable {
     public void clearEquipment();
 
     /**
-     * Removes all the rules.
-     */
-    public void clearRules();
-
-    /**
      * Removes all the weapons.
      */
     public void clearWeapons();
@@ -71,14 +66,14 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the actions attribute
      */
-    public EditableValueHandler getActions();
+    public Integer getActions();
 
     /**
      * Returns the agility attribute.
      * 
      * @return the agility attribute
      */
-    public EditableValueHandler getAgility();
+    public Integer getAgility();
 
     /**
      * Returns the armor attribute.
@@ -99,7 +94,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the combat attribute
      */
-    public EditableValueHandler getCombat();
+    public Integer getCombat();
 
     /**
      * Returns all the pieces of equipment.
@@ -127,7 +122,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the precision attribute
      */
-    public EditableValueHandler getPrecision();
+    public Integer getPrecision();
 
     /**
      * Returns the special rules assigned to the unit.
@@ -141,21 +136,21 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the strength attribute
      */
-    public EditableValueHandler getStrength();
+    public Integer getStrength();
 
     /**
      * Returns the tech attribute.
      * 
      * @return the tech attribute
      */
-    public EditableValueHandler getTech();
+    public Integer getTech();
 
     /**
      * Returns the toughness attribute.
      * 
      * @return the toughness attribute
      */
-    public EditableValueHandler getToughness();
+    public Integer getToughness();
 
     /**
      * Returns the unit's name.
@@ -169,7 +164,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the unit's valoration
      */
-    public EditableValueHandler getValoration();
+    public ValueHandler getValoration();
 
     /**
      * Returns the weapons.
