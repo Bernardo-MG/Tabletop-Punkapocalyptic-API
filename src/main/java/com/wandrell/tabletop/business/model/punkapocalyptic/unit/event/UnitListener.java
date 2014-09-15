@@ -19,35 +19,19 @@ import java.util.EventListener;
 import java.util.EventObject;
 
 /**
- * Listener for reacting to band related events.
+ * Listener for reacting to unit related events.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface GangListener extends EventListener {
+public interface UnitListener extends EventListener {
 
     /**
-     * Generic event to represent a change in the band.
+     * Generic event to represent a change in the unit.
      * 
      * @param e
      *            the event
      */
     public void statusChanged(final EventObject e);
-
-    /**
-     * Reacts to a unit being added to the band.
-     * 
-     * @param e
-     *            the event
-     */
-    public void unitAdded(final UnitEvent e);
-
-    /**
-     * Reacts to a unit being removed from the band.
-     * 
-     * @param e
-     *            the event
-     */
-    public void unitRemoved(final UnitEvent e);
 
 }

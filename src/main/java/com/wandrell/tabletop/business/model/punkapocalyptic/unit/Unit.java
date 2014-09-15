@@ -21,6 +21,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.UnitListener;
 import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -39,6 +40,14 @@ public interface Unit extends NewInstantiable {
      *            the piece of equipment to add
      */
     public void addEquipment(final Equipment equipment);
+
+    /**
+     * Adds a listener for unit events.
+     * 
+     * @param listener
+     *            the listener for unit events to add
+     */
+    public void addUnitListener(final UnitListener listener);
 
     /**
      * Adds a weapon.
@@ -172,6 +181,14 @@ public interface Unit extends NewInstantiable {
      * @return the weapons
      */
     public Collection<Weapon> getWeapons();
+
+    /**
+     * Removes a listener for unit events.
+     * 
+     * @param listener
+     *            the listener for unit events to remove
+     */
+    public void removeUnitListener(final UnitListener listener);
 
     /**
      * Sets the armor.
