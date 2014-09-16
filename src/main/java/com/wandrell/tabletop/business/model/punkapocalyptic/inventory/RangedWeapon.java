@@ -96,6 +96,13 @@ public interface RangedWeapon extends Weapon {
     public Integer getMediumStrength();
 
     /**
+     * Returns the weapon to be used when fighting in melee.
+     * 
+     * @return the equivalent melee weapon
+     */
+    public MeleeWeapon getMeleeEquivalent();
+
+    /**
      * Returns the penetration for short distances.
      * 
      * @return the penetration for short distances
