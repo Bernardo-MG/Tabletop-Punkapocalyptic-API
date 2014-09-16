@@ -183,12 +183,28 @@ public interface Unit extends NewInstantiable {
     public Collection<Weapon> getWeapons();
 
     /**
+     * Removed a piece of equipment.
+     * 
+     * @param equipment
+     *            the piece of equipment to remove
+     */
+    public void removeEquipment(final Equipment equipment);
+
+    /**
      * Removes a listener for unit events.
      * 
      * @param listener
      *            the listener for unit events to remove
      */
     public void removeUnitListener(final UnitListener listener);
+
+    /**
+     * Removes a weapon.
+     * 
+     * @param weapon
+     *            the weapon to remove
+     */
+    public void removeWeapon(final Weapon weapon);
 
     /**
      * Sets the armor.

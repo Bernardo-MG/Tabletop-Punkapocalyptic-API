@@ -15,30 +15,22 @@
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 
 /**
- * Represents a constraint applied to a unit during the list creation.
+ * To be used on rules which modify a weapon properties.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface ArmyBuilderUnitConstraint {
+public interface WeaponModifierSpecialRule extends SpecialRule {
 
     /**
-     * Returns the error message for this constraint.
+     * Applies the rule to a weapon.
      * 
-     * @return the constraint's error message
+     * @param weapon
+     *            the weapon to which to apply the rule
      */
-    public String getErrorMessage();
-
-    /**
-     * Checks if the constraint validates.
-     * 
-     * @param gang
-     *            the band containing the unit
-     * @return {@code true} if it validates, {@code false} otherwise
-     */
-    public Boolean isValid(final Gang gang);
+    public void applyToWeapon(final Weapon weapon);
 
 }
