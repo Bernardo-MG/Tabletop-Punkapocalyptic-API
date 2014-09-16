@@ -55,4 +55,12 @@ public interface Weapon {
      */
     public Collection<SpecialRule> getSpecialRules();
 
+    /**
+     * Sets the number of hands required for the weapon.
+     * 
+     * @param hands
+     *            the number of hands required
+     */
+    public void setHands(final Integer hands);
+
 }
