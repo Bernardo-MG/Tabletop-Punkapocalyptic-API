@@ -19,7 +19,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.ArmyBuilderUnitConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 
 /**
  * Represents a unit along it's available options.
@@ -44,7 +44,7 @@ public interface AvailabilityUnit extends Unit {
      * 
      * @return this unit's constraints
      */
-    public Collection<ArmyBuilderUnitConstraint> getConstraints();
+    public Collection<GangConstraint> getConstraints();
 
     /**
      * Returns the maximum amount of weapons the unit can acquire.

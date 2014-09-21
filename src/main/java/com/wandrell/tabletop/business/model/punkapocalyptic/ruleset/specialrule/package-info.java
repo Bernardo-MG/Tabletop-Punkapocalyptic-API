@@ -14,9 +14,9 @@
  * the License.
  */
 /**
- * Classes for modelling the ruleset.
+ * Classes for modelling the special rules.
  * 
  * @author Bernardo Martínez Garrido
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
+package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule;
 

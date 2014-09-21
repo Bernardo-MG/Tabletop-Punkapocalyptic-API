@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
+package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 
@@ -23,7 +23,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface ArmyBuilderUnitConstraint {
+public interface GangConstraint {
 
     /**
      * Returns the error message for this constraint.

@@ -116,4 +116,12 @@ public interface RangedWeapon extends Weapon {
      */
     public Integer getShortStrength();
 
+    /**
+     * Sets the equivalent melee weapon.
+     * 
+     * @param weapon
+     *            the weapon to set
+     */
+    public void setMeleeEquivalent(final MeleeWeapon weapon);
+
 }

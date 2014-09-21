@@ -13,21 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
-
 /**
- * Represents a special rule.
+ * Classes for modelling the constraints.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
-public interface SpecialRule {
+package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint;
 
-    /**
-     * Returns the rule's name.
-     * 
-     * @return the rule's name
-     */
-    public String getName();
-
-}
