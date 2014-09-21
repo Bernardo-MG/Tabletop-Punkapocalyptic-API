@@ -18,6 +18,7 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
+import com.wandrell.util.tag.NewInstantiable;
 
 /**
  * Represents a piece of armor.
@@ -25,7 +26,10 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Armor {
+public interface Armor extends NewInstantiable {
+
+    @Override
+    public Armor createNewInstance();
 
     /**
      * Returns the armor value.
