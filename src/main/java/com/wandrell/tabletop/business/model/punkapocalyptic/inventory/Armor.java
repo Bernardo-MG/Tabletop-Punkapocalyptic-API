@@ -59,4 +59,12 @@ public interface Armor extends NewInstantiable {
      */
     public Collection<SpecialRule> getSpecialRules();
 
+    /**
+     * Sets the armor's cost.
+     * 
+     * @param cost
+     *            the armor's cost
+     */
+    public void setCost(final Integer cost);
+
 }
