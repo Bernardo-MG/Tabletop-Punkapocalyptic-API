@@ -89,6 +89,13 @@ public interface RangedWeapon extends Weapon {
     public Integer getShortStrength();
 
     /**
+     * Indicates if the ranged weapon is a firearm.
+     * 
+     * @return {@code true} if the weapon is a firearm, {@code false} otherwise
+     */
+    public Boolean isFirearm();
+
+    /**
      * Sets the equivalent melee weapon.
      * 
      * @param weapon

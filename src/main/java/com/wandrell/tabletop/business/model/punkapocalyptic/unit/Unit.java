@@ -113,20 +113,6 @@ public interface Unit extends NewInstantiable {
     public Collection<Equipment> getEquipment();
 
     /**
-     * Returns the free weapon slots.
-     * 
-     * @return the free weapon slots
-     */
-    public Integer getFreeWeaponSlots();
-
-    /**
-     * Returns the maximum number of weapon slots allowed.
-     * 
-     * @return the maximum number of weapon slots
-     */
-    public Integer getMaxWeaponSlots();
-
-    /**
      * Returns the precision attribute.
      * 
      * @return the precision attribute

@@ -35,11 +35,11 @@ public interface Weapon {
     public Integer getCost();
 
     /**
-     * Returns the number of hands required to use the weapon.
+     * Returns the enhancements applied to this weapon.
      * 
-     * @return the number of hands required to use the weapon
+     * @return the weapon's enhancements
      */
-    public Integer getHands();
+    public Collection<WeaponEnhancement> getEnhacements();
 
     /**
      * Returns the weapon's name.
@@ -56,11 +56,18 @@ public interface Weapon {
     public Collection<SpecialRule> getSpecialRules();
 
     /**
-     * Sets the number of hands required for the weapon.
+     * Indicates if the weapon is a two-handed weapon.
      * 
-     * @param hands
-     *            the number of hands required
+     * @return {@code true} if it's a two-handed weapon, {@code false} otherwise
      */
-    public void setHands(final Integer hands);
+    public Boolean isTwoHanded();
+
+    /**
+     * Sets the two-handed status of the weapon.
+     * 
+     * @param twoHanded
+     *            the two-handed status
+     */
+    public void setTwoHanded(final Boolean twoHanded);
 
 }
