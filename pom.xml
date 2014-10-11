@@ -10,8 +10,8 @@
 	<packaging>jar</packaging>
 
 	<name>Tabletop's Punkapocalyptic API</name>
-	<url />
 	<description>API library for the wargame Punkapocalyptic, part of the Tabletop project.</description>
+	<url />
 
 	<licenses>
 		<license>
@@ -50,26 +50,29 @@
 	</developers>
 
 	<properties>
+		<!-- Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+		<!-- Java version -->
 		<java.version.source>1.7</java.version.source>
 		<java.version.target>${java.version.source}</java.version.target>
+		<!-- Manifest data -->
+		<manifest.name>com/wandrell/tabletop/punkapocalyptic/api</manifest.name>
 		<!-- Dependencies versions -->
 		<slf4j.version>1.7.7</slf4j.version>
 		<tabletop.version>alpha</tabletop.version>
 		<!-- Plugins versions -->
-		<plugin.changelog.version>2.3</plugin.changelog.version>
-		<plugin.changes.version>2.10</plugin.changes.version>
 		<plugin.checkstyle.version>2.12.1</plugin.checkstyle.version>
-		<plugin.cobertura.version>2.6</plugin.cobertura.version>
 		<plugin.compiler.version>3.1</plugin.compiler.version>
+		<plugin.findbugs.version>3.0.0</plugin.findbugs.version>
 		<plugin.jar.version>2.4</plugin.jar.version>
 		<plugin.javadoc.version>2.9.1</plugin.javadoc.version>
+		<plugin.jdepend.version>2.0</plugin.jdepend.version>
 		<plugin.jxr.version>2.4</plugin.jxr.version>
 		<plugin.pmd.version>3.2</plugin.pmd.version>
 		<plugin.reports.version>2.7</plugin.reports.version>
-		<plugin.surefire.version>2.17</plugin.surefire.version>
-		<!-- Manifest data -->
-		<manifest.name>com/wandrell/tabletop/punkapocalyptic/api</manifest.name>
+		<plugin.site.version>3.4</plugin.site.version>
+		<plugin.taglist.version>2.4</plugin.taglist.version>
 	</properties>
 
 	<dependencies>
@@ -87,80 +90,8 @@
 		</dependency>
 	</dependencies>
 
-	<reporting>
-		<plugins>
-			<plugin>
-				<!-- Changelog -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-changelog-plugin</artifactId>
-				<version>${plugin.changelog.version}</version>
-			</plugin>
-			<plugin>
-				<!-- Changes -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-changes-plugin</artifactId>
-				<version>${plugin.changes.version}</version>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>changes-report</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-			<plugin>
-				<!-- Checkstyle -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>${plugin.checkstyle.version}</version>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>checkstyle</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-				<configuration>
-					<configLocation>src/checkstyle/checkstyle.xml</configLocation>
-				</configuration>
-			</plugin>
-			<plugin>
-				<!-- Javadoc -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${plugin.javadoc.version}</version>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>javadoc</report>
-							<report>test-javadoc</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-			<plugin>
-				<!-- JXR -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jxr-plugin</artifactId>
-				<version>${plugin.jxr.version}</version>
-			</plugin>
-			<plugin>
-				<!-- PMD -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>${plugin.pmd.version}</version>
-			</plugin>
-			<plugin>
-				<!-- Reports -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>${plugin.reports.version}</version>
-			</plugin>
-		</plugins>
-	</reporting>
-
 	<build>
-		<defaultGoal>install</defaultGoal>
+		<defaultGoal>clean package install</defaultGoal>
 		<plugins>
 			<plugin>
 				<!-- Compiler -->
@@ -197,5 +128,130 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<!-- Checkstyle -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${plugin.checkstyle.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>checkstyle</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<configLocation>src/checkstyle/checkstyle.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- FindBugs -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>${plugin.findbugs.version}</version>
+				<configuration>
+					<effort>Max</effort>
+					<threshold>Low</threshold>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Javadoc -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${plugin.javadoc.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>javadoc</report>
+							<report>test-javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<plugin>
+				<!-- JDepend -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jdepend-maven-plugin</artifactId>
+				<version>${plugin.jdepend.version}</version>
+			</plugin>
+			<plugin>
+				<!-- JXR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>${plugin.jxr.version}</version>
+			</plugin>
+			<plugin>
+				<!-- PMD -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>${plugin.pmd.version}</version>
+				<configuration>
+					<linkXref>true</linkXref>
+					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+					<minimumTokens>100</minimumTokens>
+					<targetJdk>${java.version.source}</targetJdk>
+					<excludes>
+						<exclude>**/*Bean.java</exclude>
+						<exclude>**/generated/*.java</exclude>
+					</excludes>
+					<excludeRoots>
+						<excludeRoot>target/generated-sources/stubs</excludeRoot>
+					</excludeRoots>
+					<rulesets>
+						<ruleset>src/pmd/default-pmd.xml</ruleset>
+					</rulesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Reports -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>${plugin.reports.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Site -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>${plugin.site.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Taglist -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>taglist-maven-plugin</artifactId>
+				<version>${plugin.taglist.version}</version>
+				<configuration>
+					<tagListOptions>
+						<tagClasses>
+							<tagClass>
+								<displayName>Deprecation</displayName>
+								<tags>
+									<tag>
+										<matchString>deprecated</matchString>
+										<matchType>ignoreCase</matchType>
+									</tag>
+								</tags>
+							</tagClass>
+							<tagClass>
+								<displayName>Todo Work</displayName>
+								<tags>
+									<tag>
+										<matchString>todo</matchString>
+										<matchType>ignoreCase</matchType>
+									</tag>
+									<tag>
+										<matchString>FIXME</matchString>
+										<matchType>exact</matchType>
+									</tag>
+								</tags>
+							</tagClass>
+						</tagClasses>
+					</tagListOptions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
 
 </project>
