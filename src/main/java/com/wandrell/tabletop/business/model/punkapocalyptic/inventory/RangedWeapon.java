@@ -95,6 +95,8 @@ public interface RangedWeapon extends Weapon {
      */
     public Boolean isFirearm();
 
+    public void setFirearm(final Boolean firearm);
+
     /**
      * Sets the equivalent melee weapon.
      * 
