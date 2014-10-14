@@ -24,6 +24,13 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 public interface WeaponEnhancement {
 
     /**
+     * Returns the weapon enhancement's cost.
+     * 
+     * @return the weapon enhancement's cost
+     */
+    public Integer getCost();
+
+    /**
      * Returns the enhacement's name.
      * 
      * @return the enhacement's name

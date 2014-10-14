@@ -24,6 +24,13 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 public interface Equipment {
 
     /**
+     * Returns the equipment's cost.
+     * 
+     * @return the equipment's cost
+     */
+    public Integer getCost();
+
+    /**
      * Returns the equipment's name.
      * 
      * @return the equipment's name
