@@ -13,27 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.faction;
+package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.UnitGangConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
-/**
- * Represents a faction.
- * 
- * @author Bernardo Martínez Garrido
- * @version 0.1.0
- */
-public interface Faction {
+public interface FactionUnitAvailability {
 
-    /**
-     * Returns the faction's name.
-     * 
-     * @return the faction's name
-     */
-    public String getName();
+    public Collection<UnitGangConstraint> getConstraints();
 
-    public Collection<FactionUnitAvailability> getUnits();
+    public Unit getUnit();
 
 }
