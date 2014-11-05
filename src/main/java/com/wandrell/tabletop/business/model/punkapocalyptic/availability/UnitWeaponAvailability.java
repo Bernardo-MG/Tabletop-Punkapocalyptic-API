@@ -2,8 +2,6 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
-
 public interface UnitWeaponAvailability {
 
     /**
@@ -25,6 +23,6 @@ public interface UnitWeaponAvailability {
      * 
      * @return the weapon options
      */
-    public Collection<Weapon> getWeaponOptions();
+    public Collection<WeaponOption> getWeaponOptions();
 
 }
