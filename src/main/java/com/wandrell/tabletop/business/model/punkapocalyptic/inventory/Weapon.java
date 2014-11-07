@@ -18,6 +18,8 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.StatusEventThrower;
+import com.wandrell.util.tag.NewInstantiable;
 
 /**
  * Represents a weapon.
@@ -25,7 +27,12 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Weapon {
+public interface Weapon extends NewInstantiable, StatusEventThrower {
+
+    public void addEnhancement(final WeaponEnhancement enhancement);
+
+    @Override
+    public Weapon createNewInstance();
 
     /**
      * Returns the cost of the weapon.
@@ -39,7 +46,7 @@ public interface Weapon {
      * 
      * @return the weapon's enhancements
      */
-    public Collection<WeaponEnhancement> getEnhacements();
+    public Collection<WeaponEnhancement> getEnhancements();
 
     /**
      * Returns the weapon's name.
@@ -61,6 +68,8 @@ public interface Weapon {
      * @return {@code true} if it's a two-handed weapon, {@code false} otherwise
      */
     public Boolean isTwoHanded();
+
+    public void removeEnhancement(final WeaponEnhancement enhancement);
 
     /**
      * Sets the two-handed status of the weapon.

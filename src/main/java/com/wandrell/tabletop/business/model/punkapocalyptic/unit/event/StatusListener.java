@@ -19,12 +19,12 @@ import java.util.EventListener;
 import java.util.EventObject;
 
 /**
- * Listener for reacting to unit related events.
+ * Listener for reacting to status related events.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface UnitListener extends EventListener {
+public interface StatusListener extends EventListener {
 
     /**
      * Generic event to represent a change in the unit.

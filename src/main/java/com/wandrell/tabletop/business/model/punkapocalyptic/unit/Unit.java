@@ -21,7 +21,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.UnitListener;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.StatusEventThrower;
 import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -31,7 +31,7 @@ import com.wandrell.util.tag.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Unit extends NewInstantiable {
+public interface Unit extends NewInstantiable, StatusEventThrower {
 
     /**
      * Adds a piece of equipment.
@@ -40,14 +40,6 @@ public interface Unit extends NewInstantiable {
      *            the piece of equipment to add
      */
     public void addEquipment(final Equipment equipment);
-
-    /**
-     * Adds a listener for unit events.
-     * 
-     * @param listener
-     *            the listener for unit events to add
-     */
-    public void addUnitListener(final UnitListener listener);
 
     /**
      * Adds a weapon.
@@ -175,14 +167,6 @@ public interface Unit extends NewInstantiable {
      *            the piece of equipment to remove
      */
     public void removeEquipment(final Equipment equipment);
-
-    /**
-     * Removes a listener for unit events.
-     * 
-     * @param listener
-     *            the listener for unit events to remove
-     */
-    public void removeUnitListener(final UnitListener listener);
 
     /**
      * Removes a weapon.
