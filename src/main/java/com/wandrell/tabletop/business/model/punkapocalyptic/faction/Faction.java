@@ -29,6 +29,8 @@ public interface Faction {
 
     public void addUnit(final FactionUnitAvailability unit);
 
+    public void clearUnits();
+
     /**
      * Returns the faction's name.
      * 
