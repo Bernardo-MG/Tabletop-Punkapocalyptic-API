@@ -71,6 +71,8 @@ public interface Weapon extends NewInstantiable, StatusEventThrower {
 
     public void removeEnhancement(final WeaponEnhancement enhancement);
 
+    public void setRules(final Collection<SpecialRule> rules);
+
     /**
      * Sets the two-handed status of the weapon.
      * 

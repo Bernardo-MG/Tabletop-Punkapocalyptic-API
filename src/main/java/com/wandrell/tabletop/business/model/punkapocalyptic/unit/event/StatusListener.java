@@ -26,6 +26,8 @@ import java.util.EventObject;
  */
 public interface StatusListener extends EventListener {
 
+    // TODO: Maybe transform into a valoration listener?
+
     /**
      * Generic event to represent a change in the unit.
      * 

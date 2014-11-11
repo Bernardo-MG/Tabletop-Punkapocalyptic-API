@@ -27,6 +27,8 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.availability.Faction
  */
 public interface Faction {
 
+    public void addUnit(final FactionUnitAvailability unit);
+
     /**
      * Returns the faction's name.
      * 
@@ -35,5 +37,7 @@ public interface Faction {
     public String getName();
 
     public Collection<FactionUnitAvailability> getUnits();
+
+    public void removeUnit(final FactionUnitAvailability unit);
 
 }

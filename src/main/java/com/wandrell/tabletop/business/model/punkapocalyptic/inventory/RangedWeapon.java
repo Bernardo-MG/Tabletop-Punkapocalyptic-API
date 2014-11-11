@@ -25,6 +25,9 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
  */
 public interface RangedWeapon extends Weapon {
 
+    @Override
+    public RangedWeapon createNewInstance();
+
     /**
      * Returns the distance ranges in imperial units.
      * 
