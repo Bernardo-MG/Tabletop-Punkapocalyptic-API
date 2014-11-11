@@ -17,12 +17,12 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.UnitGangConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 public interface FactionUnitAvailability {
 
-    public Collection<UnitGangConstraint> getConstraints();
+    public Collection<GangConstraint> getConstraints();
 
     public Unit getUnit();
 
