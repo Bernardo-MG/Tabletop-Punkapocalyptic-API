@@ -32,8 +32,6 @@ public interface GangConstraint {
      */
     public String getErrorMessage();
 
-    public String getName();
-
     /**
      * Checks if the constraint validates.
      * 
