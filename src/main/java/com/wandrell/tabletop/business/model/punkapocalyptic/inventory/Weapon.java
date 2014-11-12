@@ -18,7 +18,7 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.StatusEventThrower;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.ValorationListener;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
@@ -27,9 +27,17 @@ import com.wandrell.util.tag.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Weapon extends NewInstantiable, StatusEventThrower {
+public interface Weapon extends NewInstantiable {
 
     public void addEnhancement(final WeaponEnhancement enhancement);
+
+    /**
+     * Adds a listener for valoration events.
+     * 
+     * @param listener
+     *            the listener for valoration events to add
+     */
+    public void addValorationListener(final ValorationListener listener);
 
     @Override
     public Weapon createNewInstance();
@@ -70,6 +78,14 @@ public interface Weapon extends NewInstantiable, StatusEventThrower {
     public Boolean isTwoHanded();
 
     public void removeEnhancement(final WeaponEnhancement enhancement);
+
+    /**
+     * Removes a listener for valoration events.
+     * 
+     * @param listener
+     *            the listener for status valoration to remove
+     */
+    public void removeValorationListener(final ValorationListener listener);
 
     public void setRules(final Collection<SpecialRule> rules);
 

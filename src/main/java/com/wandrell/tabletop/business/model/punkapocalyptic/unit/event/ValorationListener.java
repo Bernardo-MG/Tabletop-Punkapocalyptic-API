@@ -19,21 +19,19 @@ import java.util.EventListener;
 import java.util.EventObject;
 
 /**
- * Listener for reacting to status related events.
+ * Listener for reacting to valoration events.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface StatusListener extends EventListener {
-
-    // TODO: Maybe transform into a valoration listener?
+public interface ValorationListener extends EventListener {
 
     /**
-     * Generic event to represent a change in the unit.
+     * Generic event to represent a change in the valoration.
      * 
      * @param e
      *            the event
      */
-    public void statusChanged(final EventObject e);
+    public void valorationChanged(final EventObject e);
 
 }
