@@ -16,7 +16,6 @@
 package com.wandrell.tabletop.business.model.punkapocalyptic.unit.event;
 
 import java.util.EventListener;
-import java.util.EventObject;
 
 /**
  * Listener for reacting to band related events.
@@ -25,14 +24,6 @@ import java.util.EventObject;
  * @version 0.1.0
  */
 public interface GangListener extends EventListener {
-
-    /**
-     * Generic event to represent a change in the band.
-     * 
-     * @param e
-     *            the event
-     */
-    public void statusChanged(final EventObject e);
 
     /**
      * Reacts to a unit being added to the band.

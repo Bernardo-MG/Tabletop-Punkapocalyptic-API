@@ -17,6 +17,7 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.GangListener;
 import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
@@ -47,6 +48,14 @@ public interface Gang extends NewInstantiable {
      *            the unit to add
      */
     public void addUnit(final Unit unit);
+
+    /**
+     * Adds a listener for valoration events.
+     * 
+     * @param listener
+     *            the listener for valoration events to add
+     */
+    public void addValorationListener(final ValorationListener listener);
 
     /**
      * Removes all the units from the band.
@@ -99,5 +108,13 @@ public interface Gang extends NewInstantiable {
      *            the unit to remove
      */
     public void removeUnit(Unit unit);
+
+    /**
+     * Removes a listener for valoration events.
+     * 
+     * @param listener
+     *            the listener for status valoration to remove
+     */
+    public void removeValorationListener(final ValorationListener listener);
 
 }
