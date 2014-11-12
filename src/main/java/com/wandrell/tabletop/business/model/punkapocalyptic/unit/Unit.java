@@ -17,11 +17,11 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.ValorationListener;
 import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 

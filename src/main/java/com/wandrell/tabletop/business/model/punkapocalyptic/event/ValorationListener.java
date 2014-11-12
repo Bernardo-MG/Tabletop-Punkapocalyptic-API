@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.unit.event;
+package com.wandrell.tabletop.business.model.punkapocalyptic.event;
 
 import java.util.EventListener;
 import java.util.EventObject;

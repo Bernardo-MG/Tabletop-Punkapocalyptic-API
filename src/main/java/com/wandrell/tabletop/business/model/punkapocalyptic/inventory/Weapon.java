@@ -17,8 +17,8 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.ValorationListener;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
