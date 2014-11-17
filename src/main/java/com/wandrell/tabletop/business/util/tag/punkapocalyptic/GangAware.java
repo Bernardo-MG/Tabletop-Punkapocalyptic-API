@@ -13,35 +13,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic;
+package com.wandrell.tabletop.business.util.tag.punkapocalyptic;
+
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 
 /**
- * Interface representing a series of ranges.
+ * Indicates a dependency with a {@code Gang}.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface RangedValue {
+public interface GangAware {
 
     /**
-     * Returns the long distance value.
+     * Sets the gang dependency.
      * 
-     * @return the long distance value
+     * @param unit
+     *            the gang dependency
      */
-    public Integer getLongValue();
-
-    /**
-     * Returns the medium distance value.
-     * 
-     * @return the medium distance value
-     */
-    public Integer getMediumValue();
-
-    /**
-     * Returns the short distance value.
-     * 
-     * @return the short distance value
-     */
-    public Integer getShortValue();
+    public void setGang(final Gang gang);
 
 }

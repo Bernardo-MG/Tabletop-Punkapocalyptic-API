@@ -13,35 +13,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic;
+package com.wandrell.tabletop.business.util.tag.punkapocalyptic;
+
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 /**
- * Interface representing a series of ranges.
+ * Indicates a dependency with a {@code Unit}.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface RangedValue {
+public interface UnitAware {
 
     /**
-     * Returns the long distance value.
+     * Sets the unit dependency.
      * 
-     * @return the long distance value
+     * @param unit
+     *            the unit dependency
      */
-    public Integer getLongValue();
-
-    /**
-     * Returns the medium distance value.
-     * 
-     * @return the medium distance value
-     */
-    public Integer getMediumValue();
-
-    /**
-     * Returns the short distance value.
-     * 
-     * @return the short distance value
-     */
-    public Integer getShortValue();
+    public void setUnit(final Unit unit);
 
 }
