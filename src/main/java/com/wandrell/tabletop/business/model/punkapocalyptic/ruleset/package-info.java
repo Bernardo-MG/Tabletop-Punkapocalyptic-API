@@ -18,5 +18,5 @@
  * 
  * @author Bernardo Martínez Garrido
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule;
+package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
 

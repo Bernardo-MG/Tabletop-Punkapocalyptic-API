@@ -13,17 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint;
+package com.wandrell.tabletop.business.model.procedure.constraint.punkapocalyptic;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 
 /**
- * Represents a constraint applied to a unit.
+ * Represents a constraint applied to a gang.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface UnitConstraint {
+public interface GangConstraint {
 
     /**
      * Returns the error message for this constraint.
@@ -33,13 +33,13 @@ public interface UnitConstraint {
     public String getErrorMessage();
 
     /**
-     * Checks if the {@code Unit} adheres to the constraint.
+     * Checks if the {@code Gang} adheres to the constraint.
      * 
-     * @param unit
-     *            the {@code Unit} to check
+     * @param gang
+     *            the {@code Gang} to check
      * @return {@code true} if it adheres to the constraint, {@code false}
      *         otherwise
      */
-    public Boolean isValid(final Unit unit);
+    public Boolean isValid(final Gang gang);
 
 }
