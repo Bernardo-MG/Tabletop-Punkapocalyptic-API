@@ -87,7 +87,7 @@ public interface Weapon extends NewInstantiable {
      */
     public void removeValorationListener(final ValorationListener listener);
 
-    public void setRules(final Collection<SpecialRule> rules);
+    public void setSpecialRules(final Collection<SpecialRule> rules);
 
     /**
      * Sets the two-handed status of the weapon.
