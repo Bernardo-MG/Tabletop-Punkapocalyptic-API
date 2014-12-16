@@ -10,4 +10,6 @@ public interface MutantUnit extends Unit {
 
     public Collection<Mutation> getMutations();
 
+    public void removeMutation(final Mutation mutation);
+
 }
