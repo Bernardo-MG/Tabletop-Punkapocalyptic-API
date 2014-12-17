@@ -62,16 +62,19 @@
 		<slf4j.version>1.7.7</slf4j.version>
 		<tabletop.version>alpha</tabletop.version>
 		<!-- Plugins versions -->
-		<plugin.checkstyle.version>2.12.1</plugin.checkstyle.version>
-		<plugin.compiler.version>3.1</plugin.compiler.version>
+		<plugin.checkstyle.version>2.13</plugin.checkstyle.version>
+		<plugin.compiler.version>3.2</plugin.compiler.version>
+		<plugin.failsafe.version>2.18</plugin.failsafe.version>
 		<plugin.findbugs.version>3.0.0</plugin.findbugs.version>
-		<plugin.jar.version>2.4</plugin.jar.version>
-		<plugin.javadoc.version>2.9.1</plugin.javadoc.version>
+		<plugin.jacoco.version>0.7.2.201409121644</plugin.jacoco.version>
+		<plugin.jar.version>2.5</plugin.jar.version>
+		<plugin.javadoc.version>2.10.1</plugin.javadoc.version>
 		<plugin.jdepend.version>2.0</plugin.jdepend.version>
-		<plugin.jxr.version>2.4</plugin.jxr.version>
-		<plugin.pmd.version>3.2</plugin.pmd.version>
+		<plugin.jxr.version>2.5</plugin.jxr.version>
+		<plugin.pmd.version>3.3</plugin.pmd.version>
 		<plugin.reports.version>2.7</plugin.reports.version>
 		<plugin.site.version>3.4</plugin.site.version>
+		<plugin.surefire.version>2.18</plugin.surefire.version>
 		<plugin.taglist.version>2.4</plugin.taglist.version>
 	</properties>
 
@@ -92,6 +95,39 @@
 
 	<build>
 		<defaultGoal>clean package install</defaultGoal>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.jacoco</groupId>
+										<artifactId>jacoco-maven-plugin</artifactId>
+										<versionRange>[0.5,)
+										</versionRange>
+										<goals>
+											<goal>prepare-agent</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<!-- m2e doesn't know what to do with jacoco, let's ignore it or 
+											annoying error markers appear see http://wiki.eclipse.org/M2E_plugin_execution_not_covered -->
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<!-- Compiler -->
@@ -103,6 +139,64 @@
 					<source>${java.version.source}</source>
 					<target>${java.version.target}</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Failsafe -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>${plugin.failsafe.version}</version>
+				<configuration>
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<key>false</key>
+						</property>
+						<property>
+							<name>suitename</name>
+							<value>${project.artifactId}_(${project.groupId})_Integration_Suite</value>
+						</property>
+					</properties>
+					<suiteXmlFiles>
+						<suiteXmlFile>${project.build.testOutputDirectory}/tests_maven_integration_suite.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+				<executions>
+					<execution>
+						<id>failsafe-integration-tests</id>
+						<phase>integration-test</phase>
+						<goals>
+							<goal>integration-test</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>failsafe-verify</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<!-- JaCoCo -->
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${plugin.jacoco.version}</version>
+				<executions>
+					<execution>
+						<id>jacoco-initialize</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-test-report</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<!-- Jar -->
@@ -124,6 +218,27 @@
 							<url>${project.url}</url>
 						</manifestEntries>
 					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Surefire -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${plugin.surefire.version}</version>
+				<configuration>
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<key>false</key>
+						</property>
+						<property>
+							<name>suitename</name>
+							<value>${project.artifactId}_(${project.groupId})_Unit_Suite</value>
+						</property>
+					</properties>
+					<suiteXmlFiles>
+						<suiteXmlFile>${project.build.testOutputDirectory}/tests_maven_unit_suite.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -156,6 +271,12 @@
 					<effort>Max</effort>
 					<threshold>Low</threshold>
 				</configuration>
+			</plugin>
+			<plugin>
+				<!-- JaCoCo -->
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${plugin.jacoco.version}</version>
 			</plugin>
 			<plugin>
 				<!-- Javadoc -->
@@ -215,6 +336,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${plugin.site.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Surefire -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>${plugin.surefire.version}</version>
 			</plugin>
 			<plugin>
 				<!-- Taglist -->
