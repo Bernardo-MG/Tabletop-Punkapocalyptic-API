@@ -20,8 +20,8 @@ import java.util.Collection;
 import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.GangListener;
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
-import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.EditableValueBox;
+import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
@@ -70,7 +70,7 @@ public interface Gang extends NewInstantiable {
      * 
      * @return the number of bullets globally assigned
      */
-    public EditableValueHandler getBullets();
+    public EditableValueBox getBullets();
 
     /**
      * The band's faction.
@@ -91,7 +91,7 @@ public interface Gang extends NewInstantiable {
      * 
      * @return the band's valoration
      */
-    public ValueHandler getValoration();
+    public ValueBox getValoration();
 
     /**
      * Removes a listener for band events.

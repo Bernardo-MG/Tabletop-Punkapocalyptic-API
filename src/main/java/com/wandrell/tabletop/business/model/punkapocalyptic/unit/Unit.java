@@ -22,7 +22,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
-import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
@@ -159,7 +159,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the unit's valoration
      */
-    public ValueHandler getValoration();
+    public ValueBox getValoration();
 
     /**
      * Returns the weapons.
