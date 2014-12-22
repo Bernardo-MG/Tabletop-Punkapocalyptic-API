@@ -59,7 +59,7 @@
 		<!-- Manifest data -->
 		<manifest.name>com/wandrell/tabletop/punkapocalyptic/api</manifest.name>
 		<!-- Dependencies versions -->
-		<slf4j.version>1.7.7</slf4j.version>
+		<testng.version>6.8.8</testng.version>
 		<tabletop.version>alpha</tabletop.version>
 		<!-- Plugins versions -->
 		<plugin.checkstyle.version>2.13</plugin.checkstyle.version>
@@ -80,16 +80,17 @@
 
 	<dependencies>
 		<dependency>
-			<!-- SLF4J API -->
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j.version}</version>
-		</dependency>
-		<dependency>
 			<!-- Tabletop API -->
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>tabletop-api</artifactId>
 			<version>${tabletop.version}</version>
+		</dependency>
+		<dependency>
+			<!-- TestNG -->
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
