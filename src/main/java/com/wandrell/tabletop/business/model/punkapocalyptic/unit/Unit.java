@@ -17,11 +17,11 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.UnitListener;
 import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -42,12 +42,12 @@ public interface Unit extends NewInstantiable {
     public void addEquipment(final Equipment equipment);
 
     /**
-     * Adds a listener for valoration events.
+     * Adds a listener for unit events.
      * 
      * @param listener
-     *            the listener for valoration events to add
+     *            the listener for unit events to add
      */
-    public void addValorationListener(final ValorationListener listener);
+    public void addUnitListener(final UnitListener listener);
 
     /**
      * Adds a weapon.
@@ -75,14 +75,14 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the actions attribute
      */
-    public Integer getActions();
+    public ValueBox getActions();
 
     /**
      * Returns the agility attribute.
      * 
      * @return the agility attribute
      */
-    public Integer getAgility();
+    public ValueBox getAgility();
 
     /**
      * Returns the armor attribute.
@@ -103,7 +103,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the combat attribute
      */
-    public Integer getCombat();
+    public ValueBox getCombat();
 
     /**
      * Returns all the pieces of equipment.
@@ -117,7 +117,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the precision attribute
      */
-    public Integer getPrecision();
+    public ValueBox getPrecision();
 
     /**
      * Returns the special rules assigned to the unit.
@@ -131,21 +131,21 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the strength attribute
      */
-    public Integer getStrength();
+    public ValueBox getStrength();
 
     /**
      * Returns the tech attribute.
      * 
      * @return the tech attribute
      */
-    public Integer getTech();
+    public ValueBox getTech();
 
     /**
      * Returns the toughness attribute.
      * 
      * @return the toughness attribute
      */
-    public Integer getToughness();
+    public ValueBox getToughness();
 
     /**
      * Returns the unit's name.
@@ -177,12 +177,12 @@ public interface Unit extends NewInstantiable {
     public void removeEquipment(final Equipment equipment);
 
     /**
-     * Removes a listener for valoration events.
+     * Removes a listener for unit events.
      * 
      * @param listener
-     *            the listener for status valoration to remove
+     *            the listener for unit events to remove
      */
-    public void removeValorationListener(final ValorationListener listener);
+    public void removeUnitListener(final UnitListener listener);
 
     /**
      * Removes a weapon.
