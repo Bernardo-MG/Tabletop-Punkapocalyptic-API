@@ -17,7 +17,6 @@ But currently my projects lack a Maven repository, and so can't be handled autom
 
 The list of projects which need to be manually downloaded and installed are:
 * [Wandrell's Core library][]
-* [Wandrell's Framework library][]
 * [Tabletop API library][]
 
 ### Getting the code
@@ -29,4 +28,3 @@ The project is released under version 2.0 of the [Apache License][].
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
 [Tabletop API library]: http://github.com/Bernardo-MG/Tabletop-API
 [Wandrell's Core library]: http://github.com/Bernardo-MG/Wandrell-Core
-[Wandrell's Framework library]: http://github.com/Bernardo-MG/Wandrell-Framework
