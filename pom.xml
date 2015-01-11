@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wandrell.tabletop</groupId>
-	<artifactId>tabletop-punkapocalyptic-api</artifactId>
+	<artifactId>punkapocalyptic-api</artifactId>
 	<version>alpha</version>
 	<packaging>jar</packaging>
 
