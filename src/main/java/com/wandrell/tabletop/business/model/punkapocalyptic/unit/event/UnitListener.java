@@ -27,26 +27,68 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationList
  */
 public interface UnitListener extends ValorationListener {
 
-    public void actionsChanged(final EventObject e);
+    /**
+     * Reacts to the Actions attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void actionsChanged(final EventObject event);
 
-    public void agilityChanged(final EventObject e);
+    /**
+     * Reacts to the Agility attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void agilityChanged(final EventObject event);
 
-    public void combatChanged(final EventObject e);
+    /**
+     * Reacts to the Combat attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void combatChanged(final EventObject event);
 
     /**
      * Generic event to represent a change in the unit's mutations.
      * 
-     * @param e
+     * @param event
      *            the event
      */
-    public void mutationChanged(final EventObject e);
+    public void mutationChanged(final EventObject event);
 
-    public void precisionChanged(final EventObject e);
+    /**
+     * Reacts to the Precision attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void precisionChanged(final EventObject event);
 
-    public void strengthChanged(final EventObject e);
+    /**
+     * Reacts to the Strength attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void strengthChanged(final EventObject event);
 
-    public void techChanged(final EventObject e);
+    /**
+     * Reacts to the Tech attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void techChanged(final EventObject event);
 
-    public void toughnessChanged(final EventObject e);
+    /**
+     * Reacts to the Toughness attribute value changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void toughnessChanged(final EventObject event);
 
 }

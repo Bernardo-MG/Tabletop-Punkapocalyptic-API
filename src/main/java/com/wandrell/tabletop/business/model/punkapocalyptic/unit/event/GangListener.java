@@ -27,22 +27,28 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationList
  */
 public interface GangListener extends ValorationListener {
 
-    public void bulletsChanged(final EventObject e);
+    /**
+     * Reacts to the number of available bullets changing.
+     * 
+     * @param event
+     *            the event
+     */
+    public void bulletsChanged(final EventObject event);
 
     /**
      * Reacts to a unit being added to the band.
      * 
-     * @param e
+     * @param event
      *            the event
      */
-    public void unitAdded(final UnitEvent e);
+    public void unitAdded(final UnitEvent event);
 
     /**
      * Reacts to a unit being removed from the band.
      * 
-     * @param e
+     * @param event
      *            the event
      */
-    public void unitRemoved(final UnitEvent e);
+    public void unitRemoved(final UnitEvent event);
 
 }

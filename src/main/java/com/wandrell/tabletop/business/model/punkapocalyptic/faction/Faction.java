@@ -27,8 +27,17 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.availability.Faction
  */
 public interface Faction {
 
+    /**
+     * Adds a Unit.
+     * 
+     * @param unit
+     *            the unit to add
+     */
     public void addUnit(final FactionUnitAvailability unit);
 
+    /**
+     * Removes all the units.
+     */
     public void clearUnits();
 
     /**
@@ -38,8 +47,19 @@ public interface Faction {
      */
     public String getName();
 
+    /**
+     * Returns all the units.
+     * 
+     * @return all the units
+     */
     public Collection<FactionUnitAvailability> getUnits();
 
+    /**
+     * Removes a Unit.
+     * 
+     * @param unit
+     *            the Unit to remove
+     */
     public void removeUnit(final FactionUnitAvailability unit);
 
 }

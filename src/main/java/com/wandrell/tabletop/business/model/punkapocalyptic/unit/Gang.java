@@ -98,6 +98,12 @@ public interface Gang extends NewInstantiable {
      */
     public void removeUnit(Unit unit);
 
+    /**
+     * Sets the available bullets.
+     * 
+     * @param bullets
+     *            the available bullets
+     */
     public void setBullets(final Integer bullets);
 
 }

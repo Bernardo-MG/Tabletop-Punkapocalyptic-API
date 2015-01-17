@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,25 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.event;
-
-import java.util.EventListener;
-import java.util.EventObject;
+package com.wandrell.tabletop.business.model.punkapocalyptic.unit.mutation;
 
 /**
- * Listener for reacting to valoration events.
+ * Represents a mutation.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface ValorationListener extends EventListener {
+public interface Mutation {
 
     /**
-     * Generic event to represent a change in the valoration.
+     * Returns the cost.
      * 
-     * @param event
-     *            the event
+     * @return the cost
      */
-    public void valorationChanged(final EventObject event);
+    public Integer getCost();
+
+    /**
+     * Returns the name.
+     * 
+     * @return the name
+     */
+    public String getName();
 
 }

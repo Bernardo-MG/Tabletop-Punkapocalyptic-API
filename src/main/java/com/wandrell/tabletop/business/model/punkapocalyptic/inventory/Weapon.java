@@ -29,6 +29,12 @@ import com.wandrell.util.tag.NewInstantiable;
  */
 public interface Weapon extends NewInstantiable {
 
+    /**
+     * Adds a weapon enhancement.
+     * 
+     * @param enhancement
+     *            the weapon enhancement to add
+     */
     public void addEnhancement(final WeaponEnhancement enhancement);
 
     /**
@@ -77,6 +83,12 @@ public interface Weapon extends NewInstantiable {
      */
     public Boolean isTwoHanded();
 
+    /**
+     * Removes a weapon enhancement.
+     * 
+     * @param enhancement
+     *            the weapon enhancement to remove
+     */
     public void removeEnhancement(final WeaponEnhancement enhancement);
 
     /**
@@ -87,6 +99,12 @@ public interface Weapon extends NewInstantiable {
      */
     public void removeValorationListener(final ValorationListener listener);
 
+    /**
+     * Sets the special rules.
+     * 
+     * @param rules
+     *            the special rules to set
+     */
     public void setSpecialRules(final Collection<SpecialRule> rules);
 
     /**

@@ -25,6 +25,11 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.util.RangedValue;
  */
 public interface RangedArmor extends Armor {
 
+    /**
+     * Returns the value of the armor divided in ranges.
+     * 
+     * @return the ranged armor value
+     */
     public RangedValue getRangedArmor();
 
 }

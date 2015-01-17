@@ -13,25 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic.event;
-
-import java.util.EventListener;
-import java.util.EventObject;
-
 /**
- * Listener for reacting to valoration events.
+ * API for event handling.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
-public interface ValorationListener extends EventListener {
+package com.wandrell.tabletop.business.model.punkapocalyptic.event;
 
-    /**
-     * Generic event to represent a change in the valoration.
-     * 
-     * @param event
-     *            the event
-     */
-    public void valorationChanged(final EventObject event);
-
-}
