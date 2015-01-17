@@ -15,8 +15,6 @@
  */
 /**
  * Classes for modelling weapons and items.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 

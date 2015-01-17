@@ -15,8 +15,6 @@
  */
 /**
  * API for event handling.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.event;
 

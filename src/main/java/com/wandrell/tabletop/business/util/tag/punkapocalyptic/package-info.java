@@ -14,9 +14,7 @@
  * the License.
  */
 /**
- * Tag interfaces for marking classes behaviours.
- * 
- * @author Bernardo Martínez Garrido
+ * Tag interfaces for marking classes behaviors.
  */
 package com.wandrell.tabletop.business.util.tag.punkapocalyptic;
 

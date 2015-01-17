@@ -15,8 +15,6 @@
  */
 /**
  * API for Unit mutations.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.unit.mutation;
 

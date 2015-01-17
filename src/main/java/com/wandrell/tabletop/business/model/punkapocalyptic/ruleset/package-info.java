@@ -15,8 +15,6 @@
  */
 /**
  * Classes for modelling the special rules.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.ruleset;
 

@@ -15,8 +15,6 @@
  */
 /**
  * Events for the unit classes.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.unit.event;
 

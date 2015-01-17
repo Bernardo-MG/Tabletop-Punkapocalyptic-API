@@ -18,8 +18,6 @@
  * <p>
  * These interfaces are to be used for representing the available options during
  * a procedure such as creating a Gang.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 

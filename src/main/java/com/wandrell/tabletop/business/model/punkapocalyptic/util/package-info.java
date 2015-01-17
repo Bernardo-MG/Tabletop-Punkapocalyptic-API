@@ -15,8 +15,6 @@
  */
 /**
  * API for various helper objects.
- * 
- * @author Bernardo Martínez Garrido
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.util;
 
