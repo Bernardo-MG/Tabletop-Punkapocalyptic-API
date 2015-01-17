@@ -22,7 +22,6 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.UnitListener;
-import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
@@ -71,23 +70,23 @@ public interface Unit extends NewInstantiable {
     public Unit createNewInstance();
 
     /**
-     * Returns the actions attribute.
+     * Returns the actions attribute value.
      * 
-     * @return the actions attribute
+     * @return the actions attribute value
      */
-    public ValueBox getActions();
+    public Integer getActions();
 
     /**
-     * Returns the agility attribute.
+     * Returns the agility attribute value.
      * 
-     * @return the agility attribute
+     * @return the agility attribute value
      */
-    public ValueBox getAgility();
+    public Integer getAgility();
 
     /**
-     * Returns the armor attribute.
+     * Returns the equipped armor.
      * 
-     * @return the armor attribute
+     * @return the equipped armor
      */
     public Armor getArmor();
 
@@ -99,11 +98,11 @@ public interface Unit extends NewInstantiable {
     public Integer getBaseCost();
 
     /**
-     * Returns the combat attribute.
+     * Returns the combat attribute value.
      * 
-     * @return the combat attribute
+     * @return the combat attribute value
      */
-    public ValueBox getCombat();
+    public Integer getCombat();
 
     /**
      * Returns all the pieces of equipment.
@@ -113,11 +112,11 @@ public interface Unit extends NewInstantiable {
     public Collection<Equipment> getEquipment();
 
     /**
-     * Returns the precision attribute.
+     * Returns the precision attribute value.
      * 
-     * @return the precision attribute
+     * @return the precision attribute value
      */
-    public ValueBox getPrecision();
+    public Integer getPrecision();
 
     /**
      * Returns the special rules assigned to the unit.
@@ -127,25 +126,25 @@ public interface Unit extends NewInstantiable {
     public Collection<SpecialRule> getSpecialRules();
 
     /**
-     * Returns the strength attribute.
+     * Returns the strength attribute value.
      * 
-     * @return the strength attribute
+     * @return the strength attribute value
      */
-    public ValueBox getStrength();
+    public Integer getStrength();
 
     /**
-     * Returns the tech attribute.
+     * Returns the tech attribute value.
      * 
-     * @return the tech attribute
+     * @return the tech attribute value
      */
-    public ValueBox getTech();
+    public Integer getTech();
 
     /**
-     * Returns the toughness attribute.
+     * Returns the toughness attribute value.
      * 
-     * @return the toughness attribute
+     * @return the toughness attribute value
      */
-    public ValueBox getToughness();
+    public Integer getToughness();
 
     /**
      * Returns the unit's name.
@@ -159,7 +158,7 @@ public interface Unit extends NewInstantiable {
      * 
      * @return the unit's valoration
      */
-    public ValueBox getValoration();
+    public Integer getValoration();
 
     /**
      * Returns the weapons.

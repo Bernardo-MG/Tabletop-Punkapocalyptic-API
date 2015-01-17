@@ -27,12 +27,26 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationList
  */
 public interface UnitListener extends ValorationListener {
 
+    public void actionsChanged(final EventObject e);
+
+    public void agilityChanged(final EventObject e);
+
+    public void combatChanged(final EventObject e);
+
     /**
-     * Generic event to represent a change in the valoration.
+     * Generic event to represent a change in the unit's mutations.
      * 
      * @param e
      *            the event
      */
-    public void statusChanged(final EventObject e);
+    public void mutationChanged(final EventObject e);
+
+    public void precisionChanged(final EventObject e);
+
+    public void strengthChanged(final EventObject e);
+
+    public void techChanged(final EventObject e);
+
+    public void toughnessChanged(final EventObject e);
 
 }
