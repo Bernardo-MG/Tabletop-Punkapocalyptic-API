@@ -28,7 +28,7 @@ public interface GangAware {
     /**
      * Sets the gang dependency.
      * 
-     * @param unit
+     * @param gang
      *            the gang dependency
      */
     public void setGang(final Gang gang);

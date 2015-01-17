@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.business.model.punkapocalyptic;
+package com.wandrell.tabletop.business.model.punkapocalyptic.util;
 
 /**
  * Interface representing a series of ranges.

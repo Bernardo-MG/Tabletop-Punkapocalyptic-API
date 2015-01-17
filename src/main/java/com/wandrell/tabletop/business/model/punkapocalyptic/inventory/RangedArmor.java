@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
+import com.wandrell.tabletop.business.model.punkapocalyptic.util.RangedValue;
 
 /**
  * Represents a piece of armor with protection for different ranges.
