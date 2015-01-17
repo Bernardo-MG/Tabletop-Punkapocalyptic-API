@@ -17,11 +17,8 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.GangListener;
-import com.wandrell.tabletop.business.model.valuebox.EditableValueBox;
-import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 import com.wandrell.util.tag.NewInstantiable;
 
 /**
@@ -50,14 +47,6 @@ public interface Gang extends NewInstantiable {
     public void addUnit(final Unit unit);
 
     /**
-     * Adds a listener for valoration events.
-     * 
-     * @param listener
-     *            the listener for valoration events to add
-     */
-    public void addValorationListener(final ValorationListener listener);
-
-    /**
      * Removes all the units from the band.
      */
     public void clearUnits();
@@ -70,7 +59,7 @@ public interface Gang extends NewInstantiable {
      * 
      * @return the number of bullets globally assigned
      */
-    public EditableValueBox getBullets();
+    public Integer getBullets();
 
     /**
      * The band's faction.
@@ -91,7 +80,7 @@ public interface Gang extends NewInstantiable {
      * 
      * @return the band's valoration
      */
-    public ValueBox getValoration();
+    public Integer getValoration();
 
     /**
      * Removes a listener for band events.
@@ -109,12 +98,6 @@ public interface Gang extends NewInstantiable {
      */
     public void removeUnit(Unit unit);
 
-    /**
-     * Removes a listener for valoration events.
-     * 
-     * @param listener
-     *            the listener for status valoration to remove
-     */
-    public void removeValorationListener(final ValorationListener listener);
+    public void setBullets(final Integer bullets);
 
 }
