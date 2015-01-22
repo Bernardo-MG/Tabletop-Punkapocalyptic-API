@@ -17,30 +17,23 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.mutation.Mutation;
 
 /**
- * Indicates a unit's mutation availabilities.
+ * Indicates a unit's equipment availabilities data.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface UnitMutationAvailability {
+public interface UnitEquipmentAvailability {
 
     /**
-     * Returns the maximum allowed number of mutations which can be acquired.
+     * Returns all the equipment pieces which can be acquired.
      * 
-     * @return the mutations limit
+     * @return the armor options
      */
-    public Integer getMaxMutations();
-
-    /**
-     * Returns all the mutations which can be acquired.
-     * 
-     * @return the mutation options
-     */
-    public Collection<Mutation> getMutationOptions();
+    public Collection<Equipment> getEquipmentOptions();
 
     /**
      * The unit to which the availabilities are applied.

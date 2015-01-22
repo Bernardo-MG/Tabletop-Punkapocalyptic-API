@@ -17,10 +17,10 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
+
 /**
- * Indicates weapon availabilities data during a procedure.
- * <p>
- * This is meant to be used during the Unit setup procedure.
+ * Indicates a unit's weapon availabilities.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
@@ -40,6 +40,13 @@ public interface UnitWeaponAvailability {
      * @return the minimum number of weapons
      */
     public Integer getMinWeapons();
+
+    /**
+     * The unit to which the availabilities are applied.
+     * 
+     * @return the unit
+     */
+    public Unit getUnit();
 
     /**
      * Returns all the weapon options which can be acquired.

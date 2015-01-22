@@ -17,13 +17,12 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 import com.wandrell.tabletop.business.procedure.Constraint;
 
 /**
- * Indicates a unit's availability data during a procedure.
- * <p>
- * This is meant to be used during the Gang creation procedure.
+ * Indicates the units available to a faction.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
@@ -36,6 +35,13 @@ public interface FactionUnitAvailability {
      * @return unit constraints
      */
     public Collection<Constraint> getConstraints();
+
+    /**
+     * The faction to which the units are available.
+     * 
+     * @return the faction
+     */
+    public Faction getFaction();
 
     /**
      * The unit.

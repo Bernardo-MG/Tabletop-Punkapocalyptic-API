@@ -18,11 +18,10 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.availability;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 /**
- * Indicates armor availabilities data during a procedure.
- * <p>
- * This is meant to be used during the Unit setup procedure.
+ * Indicates a unit's armor availabilities data.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
@@ -45,5 +44,12 @@ public interface UnitArmorAvailability {
      * @return the initial armor
      */
     public Armor getInitialArmor();
+
+    /**
+     * The unit to which the availabilities are applied.
+     * 
+     * @return the unit
+     */
+    public Unit getUnit();
 
 }
