@@ -1,4 +1,4 @@
-## Tabletop's Punkapocalyptic API library
+# Tabletop's Punkapocalyptic API library
 API defining an extension to use the Tabletop project for the wargame Punkapocalyptic.
 
 ### Webpage
