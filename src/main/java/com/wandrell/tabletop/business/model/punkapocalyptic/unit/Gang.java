@@ -17,9 +17,9 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.unit;
 
 import java.util.Collection;
 
+import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.GangListener;
-import com.wandrell.util.tag.NewInstantiable;
 
 /**
  * Represents a band composed by a group of units, and all the other data

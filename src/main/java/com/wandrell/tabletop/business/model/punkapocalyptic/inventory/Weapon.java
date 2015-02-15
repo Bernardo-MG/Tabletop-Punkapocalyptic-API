@@ -17,9 +17,9 @@ package com.wandrell.tabletop.business.model.punkapocalyptic.inventory;
 
 import java.util.Collection;
 
+import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.business.model.punkapocalyptic.event.ValorationListener;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
-import com.wandrell.util.tag.NewInstantiable;
 
 /**
  * Represents a weapon.
