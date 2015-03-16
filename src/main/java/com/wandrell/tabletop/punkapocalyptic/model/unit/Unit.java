@@ -112,6 +112,13 @@ public interface Unit extends NewInstantiable {
     public Collection<Equipment> getEquipment();
 
     /**
+     * Returns the unit's name.
+     * 
+     * @return the unit's name
+     */
+    public String getName();
+
+    /**
      * Returns the precision attribute value.
      * 
      * @return the precision attribute value
@@ -145,13 +152,6 @@ public interface Unit extends NewInstantiable {
      * @return the toughness attribute value
      */
     public Integer getToughness();
-
-    /**
-     * Returns the unit's name.
-     * 
-     * @return the unit's name
-     */
-    public String getUnitName();
 
     /**
      * Return's the unit's valoration.

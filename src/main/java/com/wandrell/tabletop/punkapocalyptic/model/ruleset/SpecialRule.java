@@ -15,13 +15,18 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.ruleset;
 
+import com.wandrell.pattern.prototype.NewInstantiable;
+
 /**
  * Represents a special rule.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface SpecialRule {
+public interface SpecialRule extends NewInstantiable {
+
+    @Override
+    public SpecialRule createNewInstance();
 
     /**
      * Returns the rule's name.

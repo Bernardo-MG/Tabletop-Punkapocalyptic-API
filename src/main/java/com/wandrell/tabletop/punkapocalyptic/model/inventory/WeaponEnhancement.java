@@ -15,13 +15,18 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
+import com.wandrell.pattern.prototype.NewInstantiable;
+
 /**
  * Represents a piece of equipment which is applied to a weapon.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface WeaponEnhancement {
+public interface WeaponEnhancement extends NewInstantiable {
+
+    @Override
+    public WeaponEnhancement createNewInstance();
 
     /**
      * Returns the weapon enhancement's cost.
