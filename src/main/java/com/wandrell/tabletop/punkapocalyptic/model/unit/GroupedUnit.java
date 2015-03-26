@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit;
 
-import com.wandrell.tabletop.valuebox.EditableValueBox;
+import com.wandrell.tabletop.valuebox.ValueBox;
 
 /**
  * Represents a group of units.
@@ -32,6 +32,6 @@ public interface GroupedUnit extends Unit {
      * 
      * @return the group size
      */
-    public EditableValueBox getGroupSize();
+    public ValueBox getGroupSize();
 
 }
