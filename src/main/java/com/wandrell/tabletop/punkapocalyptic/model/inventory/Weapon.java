@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 
@@ -27,7 +27,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Weapon extends NewInstantiable {
+public interface Weapon extends Prototype {
 
     /**
      * Adds a weapon enhancement.

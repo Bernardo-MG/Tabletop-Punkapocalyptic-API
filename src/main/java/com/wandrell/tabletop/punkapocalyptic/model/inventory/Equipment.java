@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
 /**
  * Represents a piece of equipment.
@@ -23,7 +23,7 @@ import com.wandrell.pattern.prototype.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Equipment extends NewInstantiable {
+public interface Equipment extends Prototype {
 
     @Override
     public Equipment createNewInstance();

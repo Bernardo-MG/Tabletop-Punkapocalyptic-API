@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.unit;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.event.GangListener;
 
@@ -28,7 +28,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.unit.event.GangListener;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Gang extends NewInstantiable {
+public interface Gang extends Prototype {
 
     /**
      * Adds a listener for band events.

@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.mutation;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
 /**
  * Represents a mutation.
@@ -23,7 +23,7 @@ import com.wandrell.pattern.prototype.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Mutation extends NewInstantiable {
+public interface Mutation extends Prototype {
 
     @Override
     public Mutation createNewInstance();

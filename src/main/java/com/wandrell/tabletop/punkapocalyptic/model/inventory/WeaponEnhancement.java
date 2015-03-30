@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
 /**
  * Represents a piece of equipment which is applied to a weapon.
@@ -23,7 +23,7 @@ import com.wandrell.pattern.prototype.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface WeaponEnhancement extends NewInstantiable {
+public interface WeaponEnhancement extends Prototype {
 
     @Override
     public WeaponEnhancement createNewInstance();

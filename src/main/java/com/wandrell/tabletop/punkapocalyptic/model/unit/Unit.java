@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.unit;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
@@ -30,7 +30,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Unit extends NewInstantiable {
+public interface Unit extends Prototype {
 
     /**
      * Adds a piece of equipment.

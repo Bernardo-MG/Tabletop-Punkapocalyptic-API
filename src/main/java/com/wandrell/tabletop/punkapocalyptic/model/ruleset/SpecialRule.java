@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.ruleset;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
 /**
  * Represents a special rule.
@@ -23,7 +23,7 @@ import com.wandrell.pattern.prototype.NewInstantiable;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface SpecialRule extends NewInstantiable {
+public interface SpecialRule extends Prototype {
 
     @Override
     public SpecialRule createNewInstance();
