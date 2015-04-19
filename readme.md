@@ -1,5 +1,5 @@
-# Tabletop's Punkapocalyptic API library
-API defining an extension to use the Tabletop project for the wargame Punkapocalyptic.
+# Tabletop's Punkapocalyptic Model API
+API defining the model for the wargame Punkapocalyptic.
 
 ### Webpage
 Currently the project has no webpage.
@@ -45,12 +45,12 @@ The continuous integration information can be found at the [project CI page][] b
 ## License
 The project is released under version 2.0 of the [Apache License][].
 
-[development Javadoc page]: http://docs.wandrell.com/development/maven/tabletop-punkapocalyptic-api/apidocs
-[development Maven site]: http://docs.wandrell.com/development/maven/tabletop-punkapocalyptic-api
+[development Javadoc page]: http://docs.wandrell.com/development/maven/tabletop-punkapocalyptic-model-api/apidocs
+[development Maven site]: http://docs.wandrell.com/development/maven/tabletop-punkapocalyptic-model-api
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
-[Javadoc page]: http://docs.wandrell.com/maven/tabletop-punkapocalyptic-api/apidocs
-[Maven site]: http://docs.wandrell.com/maven/tabletop-punkapocalyptic-api
-[project CI page]: https://travis-ci.org/Bernardo-MG/Tabletop-Punkapocalyptic-API
-[project issues page]: https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-API/issues
-[project page]: http://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-API
-[releases repository]: http://dl.bintray.com/bernardo-mg/tabletop-punkapocalyptic-api
+[Javadoc page]: http://docs.wandrell.com/maven/tabletop-punkapocalyptic-model-api/apidocs
+[Maven site]: http://docs.wandrell.com/maven/tabletop-punkapocalyptic-model-api
+[project CI page]: https://travis-ci.org/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API
+[project issues page]: https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API/issues
+[project page]: http://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API
+[releases repository]: http://dl.bintray.com/bernardo-mg/tabletop-punkapocalyptic-model-api

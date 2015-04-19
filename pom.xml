@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wandrell.tabletop</groupId>
-	<artifactId>punkapocalyptic-api</artifactId>
+	<artifactId>punkapocalyptic-model-api</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Tabletop's Punkapocalyptic API</name>
-	<description>API library for the wargame Punkapocalyptic, part of the Tabletop project.</description>
+	<description>Model API library for the wargame Punkapocalyptic, part of the Tabletop project.</description>
 	<url />
 
 	<licenses>
@@ -22,15 +22,15 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-API.git</connection>
-		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-API.git</developerConnection>
+		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API.git</connection>
+		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API.git</developerConnection>
 		<tag>head</tag>
-		<url>http://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-API</url>
+		<url>http://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API</url>
 	</scm>
 
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Punkapocalyptic-API</url>
+		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Punkapocalyptic-Model-API</url>
 		<notifiers />
 	</ciManagement>
 
@@ -39,7 +39,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>wandrell-releases</id>
 			<name>Wandrell releases repository</name>
-			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-punkapocalyptic-api</url>
+			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-punkapocalyptic-model-api</url>
 		</repository>
 		<snapshotRepository>
 			<uniqueVersion>true</uniqueVersion>
@@ -59,7 +59,7 @@
 				<site>
 					<id>wandrell-site</id>
 					<name>Wandrell Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-punkapocalyptic-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -69,7 +69,7 @@
 				<site>
 					<id>wandrell-site-development</id>
 					<name>Wandrell Development Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-punkapocalyptic-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
