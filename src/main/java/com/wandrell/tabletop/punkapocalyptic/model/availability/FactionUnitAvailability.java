@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.procedure.Constraint;
+import com.wandrell.tabletop.procedure.ConstraintData;
 import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
 
@@ -30,11 +30,12 @@ import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
 public interface FactionUnitAvailability {
 
     /**
-     * The constraints to be applied to the unit during the procedure.
+     * The tokens for the constraints to be applied to the unit during the
+     * procedure.
      * 
      * @return unit constraints
      */
-    public Collection<Constraint> getConstraints();
+    public Collection<ConstraintData> getConstraints();
 
     /**
      * The faction to which the units are available.
