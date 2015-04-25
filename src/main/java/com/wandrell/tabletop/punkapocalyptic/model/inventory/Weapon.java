@@ -49,6 +49,13 @@ public interface Weapon extends Prototype {
     public Weapon createNewInstance();
 
     /**
+     * Returns the base cost of the weapon.
+     * 
+     * @return the base cost of the weapon
+     */
+    public Integer getBaseCost();
+
+    /**
      * Returns the cost of the weapon.
      * 
      * @return the cost of the weapon
