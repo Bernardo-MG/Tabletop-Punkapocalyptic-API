@@ -15,18 +15,13 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.faction;
 
-import com.wandrell.pattern.prototype.Prototype;
-
 /**
  * Represents a faction.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Faction extends Prototype {
-
-    @Override
-    public Faction createNewInstance();
+public interface Faction {
 
     /**
      * Returns the faction's name.
