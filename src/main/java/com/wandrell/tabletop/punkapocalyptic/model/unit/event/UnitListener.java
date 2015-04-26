@@ -25,31 +25,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface UnitListener extends ValorationListener {
-
-    /**
-     * Reacts to the Actions attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void actionsChanged(final EventObject event);
-
-    /**
-     * Reacts to the Agility attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void agilityChanged(final EventObject event);
-
-    /**
-     * Reacts to the Combat attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void combatChanged(final EventObject event);
+public interface UnitListener extends ValorationListener, AttributesListener {
 
     /**
      * Generic event to represent a change in the unit's mutations.
@@ -58,37 +34,5 @@ public interface UnitListener extends ValorationListener {
      *            the event
      */
     public void mutationChanged(final EventObject event);
-
-    /**
-     * Reacts to the Precision attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void precisionChanged(final EventObject event);
-
-    /**
-     * Reacts to the Strength attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void strengthChanged(final EventObject event);
-
-    /**
-     * Reacts to the Tech attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void techChanged(final EventObject event);
-
-    /**
-     * Reacts to the Toughness attribute value changing.
-     * 
-     * @param event
-     *            the event
-     */
-    public void toughnessChanged(final EventObject event);
 
 }

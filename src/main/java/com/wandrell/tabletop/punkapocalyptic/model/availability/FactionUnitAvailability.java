@@ -19,7 +19,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.procedure.ConstraintData;
 import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
-import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
  * Indicates the units available to a faction.
@@ -49,6 +49,6 @@ public interface FactionUnitAvailability {
      * 
      * @return the unit
      */
-    public Unit getUnit();
+    public UnitTemplate getUnit();
 
 }

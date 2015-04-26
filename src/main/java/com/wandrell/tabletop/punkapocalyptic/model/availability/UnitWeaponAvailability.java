@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
  * Indicates a unit's weapon availabilities.
@@ -46,7 +46,7 @@ public interface UnitWeaponAvailability {
      * 
      * @return the unit
      */
-    public Unit getUnit();
+    public UnitTemplate getUnit();
 
     /**
      * Returns all the weapon options which can be acquired.

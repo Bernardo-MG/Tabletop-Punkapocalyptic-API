@@ -17,6 +17,8 @@ package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
 
 import java.util.EventObject;
 
+import com.wandrell.tabletop.event.ValueChangeEvent;
+
 /**
  * Adapter for the Unit listener.
  * 
@@ -26,28 +28,28 @@ import java.util.EventObject;
 public class UnitListenerAdapter implements UnitListener {
 
     @Override
-    public void actionsChanged(final EventObject event) {}
+    public void actionsChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void agilityChanged(final EventObject event) {}
+    public void agilityChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void combatChanged(final EventObject event) {}
+    public void combatChanged(final ValueChangeEvent event) {}
 
     @Override
     public void mutationChanged(final EventObject event) {}
 
     @Override
-    public void precisionChanged(final EventObject event) {}
+    public void precisionChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void strengthChanged(final EventObject event) {}
+    public void strengthChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void techChanged(final EventObject event) {}
+    public void techChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void toughnessChanged(final EventObject event) {}
+    public void toughnessChanged(final ValueChangeEvent event) {}
 
     @Override
     public void valorationChanged(final EventObject event) {}

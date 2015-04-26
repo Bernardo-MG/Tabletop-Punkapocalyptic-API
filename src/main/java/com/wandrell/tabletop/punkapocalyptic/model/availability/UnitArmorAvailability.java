@@ -18,7 +18,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability;
 import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
-import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
  * Indicates a unit's armor availabilities data.
@@ -50,6 +50,6 @@ public interface UnitArmorAvailability {
      * 
      * @return the unit
      */
-    public Unit getUnit();
+    public UnitTemplate getUnit();
 
 }

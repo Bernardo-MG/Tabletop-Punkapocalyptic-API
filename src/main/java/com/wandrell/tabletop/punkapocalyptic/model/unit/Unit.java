@@ -23,6 +23,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.stats.AttributesHolder;
 
 /**
  * Represents a unit.
@@ -70,39 +71,13 @@ public interface Unit extends Prototype {
     public Unit createNewInstance();
 
     /**
-     * Returns the actions attribute value.
-     * 
-     * @return the actions attribute value
-     */
-    public Integer getActions();
-
-    /**
-     * Returns the agility attribute value.
-     * 
-     * @return the agility attribute value
-     */
-    public Integer getAgility();
-
-    /**
      * Returns the equipped armor.
      * 
      * @return the equipped armor
      */
     public Armor getArmor();
 
-    /**
-     * Return's the unit's base cost.
-     * 
-     * @return the unit's base cost
-     */
-    public Integer getBaseCost();
-
-    /**
-     * Returns the combat attribute value.
-     * 
-     * @return the combat attribute value
-     */
-    public Integer getCombat();
+    public AttributesHolder getAttributes();
 
     /**
      * Returns all the pieces of equipment.
@@ -119,39 +94,13 @@ public interface Unit extends Prototype {
     public String getName();
 
     /**
-     * Returns the precision attribute value.
-     * 
-     * @return the precision attribute value
-     */
-    public Integer getPrecision();
-
-    /**
      * Returns the special rules assigned to the unit.
      * 
      * @return the special rules assigned to the unit
      */
     public Collection<SpecialRule> getSpecialRules();
 
-    /**
-     * Returns the strength attribute value.
-     * 
-     * @return the strength attribute value
-     */
-    public Integer getStrength();
-
-    /**
-     * Returns the tech attribute value.
-     * 
-     * @return the tech attribute value
-     */
-    public Integer getTech();
-
-    /**
-     * Returns the toughness attribute value.
-     * 
-     * @return the toughness attribute value
-     */
-    public Integer getToughness();
+    public UnitTemplate getUnitTemplate();
 
     /**
      * Return's the unit's valoration.

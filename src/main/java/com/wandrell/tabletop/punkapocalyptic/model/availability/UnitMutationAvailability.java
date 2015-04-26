@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation;
 
 /**
@@ -47,6 +47,6 @@ public interface UnitMutationAvailability {
      * 
      * @return the unit
      */
-    public Unit getUnit();
+    public UnitTemplate getUnit();
 
 }
