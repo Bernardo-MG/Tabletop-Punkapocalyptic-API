@@ -21,7 +21,6 @@ import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
-import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.stats.AttributesHolder;
 
@@ -92,13 +91,6 @@ public interface Unit extends Prototype {
      * @return the unit's name
      */
     public String getName();
-
-    /**
-     * Returns the special rules assigned to the unit.
-     * 
-     * @return the special rules assigned to the unit
-     */
-    public Collection<SpecialRule> getSpecialRules();
 
     public UnitTemplate getUnitTemplate();
 
