@@ -15,18 +15,13 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.mutation;
 
-import com.wandrell.pattern.prototype.Prototype;
-
 /**
  * Represents a mutation.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Mutation extends Prototype {
-
-    @Override
-    public Mutation createNewInstance();
+public interface Mutation {
 
     /**
      * Returns the cost.
