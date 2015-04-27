@@ -17,6 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.punkapocalyptic.model.availability.option.WeaponOption;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**

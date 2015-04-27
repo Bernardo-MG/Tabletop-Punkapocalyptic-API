@@ -39,13 +39,6 @@ public interface Armor extends Prototype {
     public Integer getArmor();
 
     /**
-     * Returns the armor's cost.
-     * 
-     * @return the armor's cost
-     */
-    public Integer getCost();
-
-    /**
      * Returns the armor's name.
      * 
      * @return the armor's name
@@ -58,13 +51,5 @@ public interface Armor extends Prototype {
      * @return the special rules assigned to the armor
      */
     public Collection<SpecialRule> getSpecialRules();
-
-    /**
-     * Sets the armor's cost.
-     * 
-     * @param cost
-     *            the armor's cost
-     */
-    public void setCost(final Integer cost);
 
 }

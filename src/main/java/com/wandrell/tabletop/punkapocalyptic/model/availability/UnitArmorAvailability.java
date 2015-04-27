@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOption;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
@@ -36,14 +36,14 @@ public interface UnitArmorAvailability {
      * 
      * @return the armor options
      */
-    public Collection<Armor> getArmorOptions();
+    public Collection<ArmorOption> getArmorOptions();
 
     /**
      * Returns the armor initially equipped by the unit.
      * 
      * @return the initial armor
      */
-    public Armor getInitialArmor();
+    public ArmorOption getInitialArmor();
 
     /**
      * The unit to which the availabilities are applied.

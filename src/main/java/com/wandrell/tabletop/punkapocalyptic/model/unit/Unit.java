@@ -18,7 +18,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.unit;
 import java.util.Collection;
 
 import com.wandrell.pattern.prototype.Prototype;
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOption;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener;
@@ -74,7 +74,7 @@ public interface Unit extends Prototype {
      * 
      * @return the equipped armor
      */
-    public Armor getArmor();
+    public ArmorOption getArmor();
 
     public AttributesHolder getAttributes();
 
@@ -138,6 +138,6 @@ public interface Unit extends Prototype {
      * @param armor
      *            the armor to set
      */
-    public void setArmor(final Armor armor);
+    public void setArmor(final ArmorOption armor);
 
 }
