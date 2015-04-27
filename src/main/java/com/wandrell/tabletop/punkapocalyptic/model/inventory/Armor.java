@@ -17,7 +17,6 @@ package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 
 /**
@@ -26,10 +25,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Armor extends Prototype {
-
-    @Override
-    public Armor createNewInstance();
+public interface Armor {
 
     /**
      * Returns the armor value.

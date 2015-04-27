@@ -17,7 +17,6 @@ package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 
@@ -27,7 +26,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Weapon extends Prototype {
+public interface Weapon {
 
     /**
      * Adds a weapon enhancement.
@@ -44,9 +43,6 @@ public interface Weapon extends Prototype {
      *            the listener for valoration events to add
      */
     public void addValorationListener(final ValorationListener listener);
-
-    @Override
-    public Weapon createNewInstance();
 
     /**
      * Returns the base cost of the weapon.

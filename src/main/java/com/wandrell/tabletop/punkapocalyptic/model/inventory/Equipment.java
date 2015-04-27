@@ -15,18 +15,13 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
-import com.wandrell.pattern.prototype.Prototype;
-
 /**
  * Represents a piece of equipment.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface Equipment extends Prototype {
-
-    @Override
-    public Equipment createNewInstance();
+public interface Equipment {
 
     /**
      * Returns the equipment's cost.

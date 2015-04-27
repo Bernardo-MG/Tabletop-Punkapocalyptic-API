@@ -15,18 +15,13 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.ruleset;
 
-import com.wandrell.pattern.prototype.Prototype;
-
 /**
  * Represents a special rule.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0
  */
-public interface SpecialRule extends Prototype {
-
-    @Override
-    public SpecialRule createNewInstance();
+public interface SpecialRule {
 
     /**
      * Returns the rule's name.
