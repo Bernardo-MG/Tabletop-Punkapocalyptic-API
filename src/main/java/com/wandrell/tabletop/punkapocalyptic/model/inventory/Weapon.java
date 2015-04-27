@@ -106,12 +106,4 @@ public interface Weapon extends Prototype {
      */
     public void removeValorationListener(final ValorationListener listener);
 
-    /**
-     * Sets the two-handed status of the weapon.
-     * 
-     * @param twoHanded
-     *            the two-handed status
-     */
-    public void setTwoHanded(final Boolean twoHanded);
-
 }
