@@ -28,6 +28,6 @@ public interface Faction {
      * 
      * @return the faction's name
      */
-    public String getName();
+    public String getNameToken();
 
 }
