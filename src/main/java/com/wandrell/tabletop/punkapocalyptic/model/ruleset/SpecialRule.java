@@ -28,6 +28,6 @@ public interface SpecialRule {
      * 
      * @return the rule's name
      */
-    public String getName();
+    public String getNameToken();
 
 }
