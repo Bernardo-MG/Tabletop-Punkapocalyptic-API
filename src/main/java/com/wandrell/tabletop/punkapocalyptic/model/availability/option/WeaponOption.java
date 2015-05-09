@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.availability.option;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.UnitWeapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
 
 /**
@@ -42,6 +42,6 @@ public interface WeaponOption {
      * 
      * @return the weapon
      */
-    public Weapon getWeapon();
+    public UnitWeapon getWeapon();
 
 }

@@ -20,7 +20,7 @@ import java.util.Collection;
 import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOption;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.UnitWeapon;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.stats.AttributesHolder;
 
@@ -54,7 +54,7 @@ public interface Unit extends Prototype {
      * @param weapon
      *            the weapon to add
      */
-    public void addWeapon(final Weapon weapon);
+    public void addWeapon(final UnitWeapon weapon);
 
     /**
      * Removes all the pieces of equipment.
@@ -106,7 +106,7 @@ public interface Unit extends Prototype {
      * 
      * @return the weapons
      */
-    public Collection<Weapon> getWeapons();
+    public Collection<UnitWeapon> getWeapons();
 
     /**
      * Removed a piece of equipment.
@@ -130,7 +130,7 @@ public interface Unit extends Prototype {
      * @param weapon
      *            the weapon to remove
      */
-    public void removeWeapon(final Weapon weapon);
+    public void removeWeapon(final UnitWeapon weapon);
 
     /**
      * Sets the armor.
