@@ -37,13 +37,4 @@ public interface WeaponEnhancement {
      */
     public String getName();
 
-    /**
-     * Indicates if the weapon can receive the enhancement.
-     * 
-     * @param weapon
-     *            the weapon to check
-     * @return {@code true} if the weapon can receive the enhancement,
-     */
-    public Boolean isValid(final Weapon weapon);
-
 }
