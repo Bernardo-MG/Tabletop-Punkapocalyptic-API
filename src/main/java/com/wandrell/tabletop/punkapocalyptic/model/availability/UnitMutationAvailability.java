@@ -40,7 +40,7 @@ public interface UnitMutationAvailability {
      * 
      * @return the mutation options
      */
-    public Collection<Mutation> getMutationOptions();
+    public Collection<? extends Mutation> getMutationOptions();
 
     /**
      * The unit to which the availabilities are applied.

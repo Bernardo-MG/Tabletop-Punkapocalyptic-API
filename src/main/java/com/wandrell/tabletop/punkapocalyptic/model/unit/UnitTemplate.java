@@ -18,6 +18,6 @@ public interface UnitTemplate {
      * 
      * @return the special rules assigned to the unit
      */
-    public Collection<SpecialRule> getSpecialRules();
+    public Collection<? extends SpecialRule> getSpecialRules();
 
 }

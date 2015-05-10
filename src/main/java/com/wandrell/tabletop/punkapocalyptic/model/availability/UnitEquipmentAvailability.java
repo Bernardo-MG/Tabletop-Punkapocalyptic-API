@@ -33,7 +33,7 @@ public interface UnitEquipmentAvailability {
      * 
      * @return the armor options
      */
-    public Collection<Equipment> getEquipmentOptions();
+    public Collection<? extends Equipment> getEquipmentOptions();
 
     /**
      * The unit to which the availabilities are applied.

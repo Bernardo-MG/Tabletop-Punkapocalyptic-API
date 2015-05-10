@@ -54,6 +54,6 @@ public interface UnitWeaponAvailability {
      * 
      * @return the weapon options
      */
-    public Collection<WeaponOption> getWeaponOptions();
+    public Collection<? extends WeaponOption> getWeaponOptions();
 
 }

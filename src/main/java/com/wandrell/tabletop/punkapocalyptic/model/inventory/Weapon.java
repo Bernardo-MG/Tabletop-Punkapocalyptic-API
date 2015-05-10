@@ -46,7 +46,7 @@ public interface Weapon {
      * 
      * @return the special rules assigned to the weapon
      */
-    public Collection<SpecialRule> getSpecialRules();
+    public Collection<? extends SpecialRule> getSpecialRules();
 
     /**
      * Indicates if the weapon is a two-handed weapon.

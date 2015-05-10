@@ -35,7 +35,7 @@ public interface WeaponOption {
      * 
      * @return the weapon enhancement options
      */
-    public Collection<WeaponEnhancement> getEnhancements();
+    public Collection<? extends WeaponEnhancement> getEnhancements();
 
     /**
      * Returns the weapon.

@@ -46,6 +46,6 @@ public interface Armor {
      * 
      * @return the special rules assigned to the armor
      */
-    public Collection<SpecialRule> getSpecialRules();
+    public Collection<? extends SpecialRule> getSpecialRules();
 
 }

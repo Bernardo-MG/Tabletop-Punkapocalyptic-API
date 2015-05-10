@@ -35,7 +35,7 @@ public interface FactionUnitAvailability {
      * 
      * @return unit constraints
      */
-    public Collection<ConstraintData> getConstraints();
+    public Collection<? extends ConstraintData> getConstraints();
 
     /**
      * The faction to which the units are available.

@@ -36,7 +36,7 @@ public interface UnitArmorAvailability {
      * 
      * @return the armor options
      */
-    public Collection<ArmorOption> getArmorOptions();
+    public Collection<? extends ArmorOption> getArmorOptions();
 
     /**
      * Returns the armor initially equipped by the unit.
