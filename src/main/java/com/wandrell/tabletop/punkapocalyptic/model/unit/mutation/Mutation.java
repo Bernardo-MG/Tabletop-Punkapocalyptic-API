@@ -30,11 +30,13 @@ public interface Mutation {
      */
     public Integer getCost();
 
+    public String getName();
+
     /**
      * Returns the name.
      * 
      * @return the name
      */
-    public String getName();
+    public String getNameToken();
 
 }

@@ -23,6 +23,8 @@ package com.wandrell.tabletop.punkapocalyptic.model.ruleset;
  */
 public interface SpecialRule {
 
+    public String getName();
+
     /**
      * Returns the rule's name.
      * 

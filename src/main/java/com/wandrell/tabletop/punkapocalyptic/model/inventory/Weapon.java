@@ -34,6 +34,8 @@ public interface Weapon {
      */
     public Integer getCost();
 
+    public String getName();
+
     /**
      * Returns the weapon's name.
      * 

@@ -30,6 +30,8 @@ public interface Equipment {
      */
     public Integer getCost();
 
+    public String getName();
+
     /**
      * Returns the equipment's name.
      * 
