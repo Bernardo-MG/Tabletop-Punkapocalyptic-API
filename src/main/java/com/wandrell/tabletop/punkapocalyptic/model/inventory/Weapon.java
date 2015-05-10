@@ -39,7 +39,7 @@ public interface Weapon {
      * 
      * @return the weapon's name
      */
-    public String getName();
+    public String getNameToken();
 
     /**
      * Returns the special rules assigned to the weapon.

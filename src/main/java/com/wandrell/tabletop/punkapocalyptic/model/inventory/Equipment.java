@@ -35,6 +35,6 @@ public interface Equipment {
      * 
      * @return the equipment's name
      */
-    public String getName();
+    public String getNameToken();
 
 }

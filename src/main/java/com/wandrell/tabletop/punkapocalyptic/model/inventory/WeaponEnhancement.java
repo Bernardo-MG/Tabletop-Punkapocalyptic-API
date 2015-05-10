@@ -35,6 +35,6 @@ public interface WeaponEnhancement {
      * 
      * @return the enhacement's name
      */
-    public String getName();
+    public String getNameToken();
 
 }

@@ -39,7 +39,7 @@ public interface Armor {
      * 
      * @return the armor's name
      */
-    public String getName();
+    public String getNameToken();
 
     /**
      * Returns the special rules assigned to the armor.
