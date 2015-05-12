@@ -30,8 +30,6 @@ public interface WeaponEnhancement {
      */
     public Integer getCost();
 
-    public String getName();
-
     /**
      * Returns the enhacement's name.
      * 

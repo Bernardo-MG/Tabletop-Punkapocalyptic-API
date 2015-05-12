@@ -23,8 +23,6 @@ package com.wandrell.tabletop.punkapocalyptic.model.faction;
  */
 public interface Faction {
 
-    public String getName();
-
     /**
      * Returns the faction's name.
      * 

@@ -11,8 +11,6 @@ public interface UnitTemplate {
 
     public Integer getBaseCost();
 
-    public String getName();
-
     public String getNameToken();
 
     /**
