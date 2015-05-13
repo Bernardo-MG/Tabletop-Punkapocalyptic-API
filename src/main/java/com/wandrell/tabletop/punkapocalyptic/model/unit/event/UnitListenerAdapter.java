@@ -23,7 +23,6 @@ import com.wandrell.tabletop.event.ValueChangeEvent;
  * Adapter for the Unit listener.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public class UnitListenerAdapter implements UnitListener {
 
@@ -37,7 +36,10 @@ public class UnitListenerAdapter implements UnitListener {
     public void combatChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void mutationChanged(final EventObject event) {}
+    public void mutationAdded(final EventObject event) {}
+
+    @Override
+    public void mutationRemoved(final EventObject event) {}
 
     @Override
     public void precisionChanged(final ValueChangeEvent event) {}
@@ -52,6 +54,6 @@ public class UnitListenerAdapter implements UnitListener {
     public void toughnessChanged(final ValueChangeEvent event) {}
 
     @Override
-    public void valorationChanged(final EventObject event) {}
+    public void valorationChanged(final ValueChangeEvent event) {}
 
 }

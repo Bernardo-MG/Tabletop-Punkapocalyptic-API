@@ -14,7 +14,22 @@
  * the License.
  */
 /**
- * Classes for modelling weapons and items.
+ * API for weapons, armors and equipment.
+ * <p>
+ * Weapons derive from
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon Weapon},
+ * and are divided into
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.inventory.MeleeWeapon
+ * MeleeWeapon} and
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.inventory.RangedWeapon
+ * RangedWeapon}.
+ * <p>
+ * Armors are represented by
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor Armor}.
+ * <p>
+ * Equipment is represented by
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment
+ * Equipment}.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 

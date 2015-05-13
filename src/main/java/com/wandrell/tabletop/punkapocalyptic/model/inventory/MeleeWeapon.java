@@ -16,17 +16,18 @@
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
 /**
- * Represents a melee weapon.
+ * Interface for melee weapons.
+ * <p>
+ * These add combat, penetration and strength values.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface MeleeWeapon extends Weapon {
 
     /**
-     * Returns the combat modifier.
+     * Returns the weapon's combat value.
      * 
-     * @return the combat modifier
+     * @return the weapon's combat value
      */
     public Integer getCombat();
 
@@ -38,9 +39,9 @@ public interface MeleeWeapon extends Weapon {
     public Integer getPenetration();
 
     /**
-     * Returns the weapon's strength.
+     * Returns the weapon's strength value.
      * 
-     * @return the weapon's strength
+     * @return the weapon's strength value
      */
     public Integer getStrength();
 

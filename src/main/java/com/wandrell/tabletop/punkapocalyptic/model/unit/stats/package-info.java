@@ -13,27 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
-
-import com.wandrell.tabletop.event.ValueChangeEvent;
-
 /**
- * Adapter for the Gang listener.
- * 
- * @author Bernardo Martínez Garrido
+ * API for statistics objects.
+ * <p>
+ * The
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.stats.AttributesHolder
+ * AttributesHolder} stores data for all the existing attributes.
+ * <p>
+ * These are meant to store the attributes for a
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.Unit Unit} or
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate
+ * UnitTemplate} mostly, but also serves to store bonus to be applied to them.
  */
-public class GangListenerAdapter implements GangListener {
+package com.wandrell.tabletop.punkapocalyptic.model.unit.stats;
 
-    @Override
-    public void bulletsChanged(final ValueChangeEvent event) {}
-
-    @Override
-    public void unitAdded(final UnitEvent event) {}
-
-    @Override
-    public void unitRemoved(final UnitEvent event) {}
-
-    @Override
-    public void valorationChanged(final ValueChangeEvent event) {}
-
-}

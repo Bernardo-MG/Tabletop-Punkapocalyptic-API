@@ -16,17 +16,18 @@
 package com.wandrell.tabletop.punkapocalyptic.model.faction;
 
 /**
- * Represents a faction.
+ * Interface for factions.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface Faction {
 
     /**
-     * Returns the faction's name.
+     * Returns the token representing this faction.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the faction's name
+     * @return the faction's name token
      */
     public String getNameToken();
 

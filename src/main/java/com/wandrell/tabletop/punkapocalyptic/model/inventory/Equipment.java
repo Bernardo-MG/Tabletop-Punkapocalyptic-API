@@ -16,24 +16,27 @@
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
 /**
- * Represents a piece of equipment.
+ * Interface for equipment pieces.
+ * <p>
+ * These are added to units, and represent gameplay changes.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface Equipment {
 
     /**
-     * Returns the equipment's cost.
+     * Returns the equipment piece's cost.
      * 
-     * @return the equipment's cost
+     * @return the equipment piece's cost
      */
     public Integer getCost();
 
     /**
-     * Returns the equipment's name.
+     * Returns the token representing this equipment piece.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the equipment's name
+     * @return the equipment piece's name token
      */
     public String getNameToken();
 

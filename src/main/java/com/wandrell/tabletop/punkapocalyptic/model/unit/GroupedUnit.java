@@ -18,9 +18,8 @@ package com.wandrell.tabletop.punkapocalyptic.model.unit;
 import com.wandrell.tabletop.valuebox.ValueBox;
 
 /**
- * Represents a group of units.
- * <p>
- * This is for those units which can be bought as a bunch.
+ * Interface for grouped units. These are the units which are used bundled,
+ * working as a pack, like they were a single unit.
  * 
  * @author Bernardo Martínez Garrido
  * @version 0.1.0

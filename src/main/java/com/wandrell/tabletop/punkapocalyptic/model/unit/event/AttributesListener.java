@@ -23,7 +23,6 @@ import com.wandrell.tabletop.event.ValueChangeEvent;
  * Listener for reacting to unit related events.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface AttributesListener extends EventListener {
 

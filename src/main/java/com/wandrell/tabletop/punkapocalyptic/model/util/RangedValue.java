@@ -16,10 +16,16 @@
 package com.wandrell.tabletop.punkapocalyptic.model.util;
 
 /**
- * Interface representing a series of ranges.
+ * Interface representing a series of ranges. This is used mostly for ranged
+ * weapons, and just to ease localizing the distances, as these can be on
+ * centimeters o inches.
+ * <p>
+ * The three methods give each a value for each of the distances: short, medium
+ * and long.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see com.wandrell.tabletop.punkapocalyptic.model.inventory.RangedWeapon
+ *      RangedWeapon
  */
 public interface RangedValue {
 

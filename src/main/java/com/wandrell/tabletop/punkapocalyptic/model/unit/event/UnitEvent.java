@@ -15,15 +15,20 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 import java.util.EventObject;
 
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
 
 /**
  * Event for units.
+ * <p>
+ * It keeps the {@link Unit} related to the event. It should not be the one who
+ * caused the event, even thought in some cases it may be, but for example the
+ * unit which has been removed from a {@code Gang}.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public final class UnitEvent extends EventObject {
 
@@ -32,12 +37,12 @@ public final class UnitEvent extends EventObject {
      */
     private static final long serialVersionUID = 1L;
     /**
-     * The event related unit.
+     * {@code Unit} related to the event.
      */
     private final Unit        eventUnit;
 
     /**
-     * Constructs an event with the specified parameters.
+     * Constructs a {@code UnitEvent} referring to the specified {@code Unit}.
      * 
      * @param source
      *            the source of the event
@@ -47,9 +52,7 @@ public final class UnitEvent extends EventObject {
     public UnitEvent(final Object source, final Unit unit) {
         super(source);
 
-        if (unit == null) {
-            throw new NullPointerException("Received a null pointer as unit");
-        }
+        checkNotNull(unit, "Received a null pointer as unit");
 
         eventUnit = unit;
     }

@@ -15,15 +15,13 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
 
-import java.util.EventObject;
-
+import com.wandrell.tabletop.event.ValueChangeEvent;
 import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
 
 /**
  * Listener for reacting to band related events.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface GangListener extends ValorationListener {
 
@@ -33,7 +31,7 @@ public interface GangListener extends ValorationListener {
      * @param event
      *            the event
      */
-    public void bulletsChanged(final EventObject event);
+    public void bulletsChanged(final ValueChangeEvent event);
 
     /**
      * Reacts to a unit being added to the band.

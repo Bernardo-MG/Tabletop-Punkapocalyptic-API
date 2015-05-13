@@ -20,10 +20,11 @@ import java.util.Collection;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 
 /**
- * Represents a piece of armor.
+ * Interface for armors.
+ * <p>
+ * These serve to increase chances of survival during combats.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface Armor {
 
@@ -35,9 +36,11 @@ public interface Armor {
     public Integer getArmor();
 
     /**
-     * Returns the armor's name.
+     * Returns the token representing this armor.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the armor's name
+     * @return the equipment armor's name token
      */
     public String getNameToken();
 

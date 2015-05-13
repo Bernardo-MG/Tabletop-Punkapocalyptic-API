@@ -16,10 +16,9 @@
 package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 
 /**
- * Represents a piece of equipment which is applied to a weapon.
+ * Interface for a piece of equipment which is applied to a weapon.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface WeaponEnhancement {
 
@@ -31,9 +30,11 @@ public interface WeaponEnhancement {
     public Integer getCost();
 
     /**
-     * Returns the enhacement's name.
+     * Returns the token representing this weapon enhancement.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the enhacement's name
+     * @return the weapon enhancement's name token
      */
     public String getNameToken();
 

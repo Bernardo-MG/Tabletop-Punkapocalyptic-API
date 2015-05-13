@@ -23,16 +23,23 @@ import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
  * Listener for reacting to unit related events.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface UnitListener extends ValorationListener, AttributesListener {
 
     /**
-     * Generic event to represent a change in the unit's mutations.
+     * Listens for mutations being added.
      * 
      * @param event
      *            the event
      */
-    public void mutationChanged(final EventObject event);
+    public void mutationAdded(final EventObject event);
+
+    /**
+     * Listens for mutations being removed.
+     * 
+     * @param event
+     *            the event
+     */
+    public void mutationRemoved(final EventObject event);
 
 }

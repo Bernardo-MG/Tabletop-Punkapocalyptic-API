@@ -14,7 +14,11 @@
  * the License.
  */
 /**
- * Classes for modelling the special rules.
+ * API for special rules.
+ * <p>
+ * These are represented by the
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule
+ * SpecialRule}.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.ruleset;
 

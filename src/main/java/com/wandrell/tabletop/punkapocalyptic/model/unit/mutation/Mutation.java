@@ -16,24 +16,27 @@
 package com.wandrell.tabletop.punkapocalyptic.model.unit.mutation;
 
 /**
- * Represents a mutation.
+ * Interface for mutations.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.MutantUnit
+ *      MutantUnit
  */
 public interface Mutation {
 
     /**
-     * Returns the cost.
+     * Returns the mutation cost.
      * 
-     * @return the cost
+     * @return the mutation cost
      */
     public Integer getCost();
 
     /**
-     * Returns the name.
+     * Returns the token representing this mutation.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the name
+     * @return the mutation's name token
      */
     public String getNameToken();
 

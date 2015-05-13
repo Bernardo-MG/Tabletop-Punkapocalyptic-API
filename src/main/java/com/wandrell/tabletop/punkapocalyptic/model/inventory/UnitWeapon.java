@@ -20,10 +20,10 @@ import java.util.Collection;
 import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
 
 /**
- * Represents a weapon.
+ * Interface for a weapon assigned to a {@code Unit}.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see com.wandrell.tabletop.punkapocalyptic.model.unit.Unit Unit
  */
 public interface UnitWeapon extends Cloneable {
 
@@ -57,7 +57,12 @@ public interface UnitWeapon extends Cloneable {
      */
     public Collection<WeaponEnhancement> getEnhancements();
 
-    public Weapon getTemplate();
+    /**
+     * Returns the basic template over which the weapon is built.
+     * 
+     * @return the weapon's template
+     */
+    public Weapon getWeaponTemplate();
 
     /**
      * Removes a weapon enhancement.

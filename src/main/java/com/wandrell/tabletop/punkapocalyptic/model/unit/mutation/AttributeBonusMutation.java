@@ -15,64 +15,23 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.mutation;
 
+import com.wandrell.tabletop.punkapocalyptic.model.unit.stats.AttributesHolder;
+
 /**
- * Represents a mutation which modifies attributes.
+ * Interface for mutations which modify attributes.
  * <p>
  * These bonus should be applied always when the unit has that particular
  * mutation, and for as long as he has this mutation.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface AttributeBonusMutation extends Mutation {
 
     /**
-     * The bonus to the Actions attribute.
+     * Returns the bonus to be applied to each attribute.
      * 
-     * @return bonus to the Actions attribute
+     * @return the bonus to be applied to the attributes
      */
-    public Integer getActionsBonus();
-
-    /**
-     * The bonus to the Agility attribute.
-     * 
-     * @return bonus to the Agility attribute
-     */
-    public Integer getAgilityBonus();
-
-    /**
-     * The bonus to the Combat attribute.
-     * 
-     * @return bonus to the Combat attribute
-     */
-    public Integer getCombatBonus();
-
-    /**
-     * The bonus to the Precision attribute.
-     * 
-     * @return bonus to the Precision attribute
-     */
-    public Integer getPrecisionBonus();
-
-    /**
-     * The bonus to the Strength attribute.
-     * 
-     * @return bonus to the Strength attribute
-     */
-    public Integer getStrengthBonus();
-
-    /**
-     * The bonus to the Tech attribute.
-     * 
-     * @return bonus to the Tech attribute
-     */
-    public Integer getTechBonus();
-
-    /**
-     * The bonus to the Toughness attribute.
-     * 
-     * @return bonus to the Toughness attribute
-     */
-    public Integer getToughnessBonus();
+    public AttributesHolder getAttributesBonus();
 
 }

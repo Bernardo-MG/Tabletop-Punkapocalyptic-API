@@ -14,7 +14,11 @@
  * the License.
  */
 /**
- * API for event handling.
+ * API for event handling, storing general events.
+ * <p>
+ * The
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener
+ * ValorationListener} serves to react to valoration related events.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.event;
 

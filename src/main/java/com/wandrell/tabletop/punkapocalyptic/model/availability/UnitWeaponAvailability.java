@@ -21,10 +21,11 @@ import com.wandrell.tabletop.punkapocalyptic.model.availability.option.WeaponOpt
 import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
- * Indicates a unit's weapon availabilities.
+ * Interface representing a unit's weapon availabilities.
+ * <p>
+ * This is used when setting up a unit.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface UnitWeaponAvailability {
 

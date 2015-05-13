@@ -16,17 +16,20 @@
 package com.wandrell.tabletop.punkapocalyptic.model.ruleset;
 
 /**
- * Represents a special rule.
+ * Interface for special rules.
+ * <p>
+ * These are applied mostly to weapons, indicating modifications to the rules.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface SpecialRule {
 
     /**
-     * Returns the rule's name.
+     * Returns the token representing this special rule.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the rule's name
+     * @return the special rule's name token
      */
     public String getNameToken();
 

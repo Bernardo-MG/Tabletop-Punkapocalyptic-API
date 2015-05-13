@@ -16,22 +16,22 @@
 package com.wandrell.tabletop.punkapocalyptic.model.event;
 
 import java.util.EventListener;
-import java.util.EventObject;
+
+import com.wandrell.tabletop.event.ValueChangeEvent;
 
 /**
  * Listener for reacting to valoration events.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface ValorationListener extends EventListener {
 
     /**
-     * Generic event to represent a change in the valoration.
+     * Reacts to the valoration value changing.
      * 
      * @param event
      *            the event
      */
-    public void valorationChanged(final EventObject event);
+    public void valorationChanged(final ValueChangeEvent event);
 
 }

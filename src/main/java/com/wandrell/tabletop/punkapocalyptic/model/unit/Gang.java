@@ -22,11 +22,17 @@ import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.event.GangListener;
 
 /**
- * Represents a band composed by a group of units, and all the other data
- * associated to it.
+ * Interface for gangs, including the units and all the other data associated to
+ * them.
+ * <p>
+ * A {@code Gang} is set up by the player before playing a game, and will
+ * represent all the resources he has available during it.
+ * <p>
+ * The most important data is the collection of {@link Unit} instances it
+ * contains but it also stores bullets and valoration.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see Unit
  */
 public interface Gang extends Prototype {
 

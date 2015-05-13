@@ -14,7 +14,10 @@
  * the License.
  */
 /**
- * Faction related classes.
+ * API for factions.
+ * <p>
+ * The {@link com.wandrell.tabletop.punkapocalyptic.model.faction Faction} takes
+ * the full job of representing factions.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.faction;
 

@@ -18,10 +18,12 @@ package com.wandrell.tabletop.punkapocalyptic.model.inventory;
 import com.wandrell.tabletop.punkapocalyptic.model.util.RangedValue;
 
 /**
- * Represents a ranged weapon.
+ * Interface for ranged weapons.
+ * <p>
+ * These add distance ranges, which can be in centimeters or inches, and
+ * strength and penetatrion values which are also ranged.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface RangedWeapon extends Weapon {
 

@@ -22,10 +22,9 @@ import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
- * Indicates the units available to a faction.
+ * Interface for representing the units available to a faction.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface FactionUnitAvailability {
 

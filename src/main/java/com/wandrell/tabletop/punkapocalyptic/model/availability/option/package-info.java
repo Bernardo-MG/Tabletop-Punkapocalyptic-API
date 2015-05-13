@@ -13,23 +13,8 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.punkapocalyptic.model.inventory;
-
-import com.wandrell.tabletop.punkapocalyptic.model.util.RangedValue;
-
 /**
- * Represents a piece of armor with protection for different ranges.
- * 
- * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * API for availabilities options.
  */
-public interface RangedArmor extends Armor {
+package com.wandrell.tabletop.punkapocalyptic.model.availability.option;
 
-    /**
-     * Returns the value of the armor divided in ranges.
-     * 
-     * @return the ranged armor value
-     */
-    public RangedValue getRangedArmor();
-
-}

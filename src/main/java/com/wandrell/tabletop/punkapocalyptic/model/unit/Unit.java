@@ -25,10 +25,25 @@ import com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.stats.AttributesHolder;
 
 /**
- * Represents a unit.
+ * Interface for generic units. This represents all the common statistics and
+ * configurable data which a unit may have.
+ * <p>
+ * Those statistics are the attributes, the valoration and the equipment,
+ * composed of the armor, and a series of weapons and equipment pieces.
+ * <p>
+ * There is a dependency with the {@link UnitTemplate} interface, as a unit will
+ * be, at its core, be built from the data taken from those templates.
+ * <p>
+ * The effect is that both the attributes and the cost will be built from those
+ * on the {@code UnitTemplate}.
+ * <p>
+ * Attributes are stored in an {@link AttributesHolder} to avoid cluttering this
+ * interface. If the attributes should be modified for any reason, this has to
+ * be handled inside said {@code AttributesHolder}.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see UnitTemplate
+ * @see AttributesHolder
  */
 public interface Unit extends Prototype {
 
@@ -76,6 +91,11 @@ public interface Unit extends Prototype {
      */
     public ArmorOption getArmor();
 
+    /**
+     * Returns the attributes of the unit.
+     * 
+     * @return the unit's attributes
+     */
     public AttributesHolder getAttributes();
 
     /**
@@ -92,10 +112,17 @@ public interface Unit extends Prototype {
      */
     public String getName();
 
+    /**
+     * Returns the basic template over which the unit is built.
+     * 
+     * @return the unit's template
+     */
     public UnitTemplate getUnitTemplate();
 
     /**
      * Return's the unit's valoration.
+     * <p>
+     * This is generated from the unit's configuration and the basic template.
      * 
      * @return the unit's valoration
      */

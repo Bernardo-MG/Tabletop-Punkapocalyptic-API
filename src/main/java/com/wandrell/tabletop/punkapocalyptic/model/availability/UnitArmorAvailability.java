@@ -21,10 +21,11 @@ import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOpti
 import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 
 /**
- * Indicates a unit's armor availabilities data.
+ * Interface representing a unit's armor availabilities data.
+ * <p>
+ * This is used when setting up a unit.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface UnitArmorAvailability {
 

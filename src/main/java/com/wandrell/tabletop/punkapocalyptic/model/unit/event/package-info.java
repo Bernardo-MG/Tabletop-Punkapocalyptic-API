@@ -14,7 +14,21 @@
  * the License.
  */
 /**
- * Events for the unit classes.
+ * API for {@link com.wandrell.tabletop.punkapocalyptic.model.unit.Unit Unit}
+ * related events.
+ * <p>
+ * The
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.event.UnitListener
+ * UnitListener} takes care of those events affecting units, while the
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.event.GangListener
+ * GangListener} does the same thing for gangs.
+ * <p>
+ * There are adapters for both of them, using them only the concrete method
+ * required for each situation must be implemented.
+ * <p>
+ * Additionally, the
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.event.AttributesListener
+ * AttributesListener} allows reacting to attribute related events.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
 

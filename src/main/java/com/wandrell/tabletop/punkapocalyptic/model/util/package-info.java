@@ -15,6 +15,15 @@
  */
 /**
  * API for various helper objects.
+ * <p>
+ * Currently only
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.util.RangedValue
+ * RangedValue} exists. This interface represents values divided into three
+ * ranges: short, medium and long.
+ * <p>
+ * This represent the three ranges existing in the game, but is meant mostly to
+ * be used when localizing ranged weapon ranges, as these can be show in
+ * centimeters or inches.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.util;
 

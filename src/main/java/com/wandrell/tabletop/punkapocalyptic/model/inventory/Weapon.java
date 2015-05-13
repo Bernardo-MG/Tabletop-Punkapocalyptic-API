@@ -20,24 +20,32 @@ import java.util.Collection;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 
 /**
- * Represents a weapon.
+ * Interface for a weapon.
+ * <p>
+ * This contains the common methods to all the weapons, no matter if they are
+ * melee or ranged weapons.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see com.wandrell.tabletop.punkapocalyptic.model.inventory.MeleeWeapon
+ *      MeleeWeapon
+ * @see com.wandrell.tabletop.punkapocalyptic.model.inventory.RangedWeapon
+ *      RangedWeapon
  */
 public interface Weapon {
 
     /**
-     * Returns the base cost of the weapon.
+     * Returns the cost of the weapon.
      * 
-     * @return the base cost of the weapon
+     * @return the cost of the weapon
      */
     public Integer getCost();
 
     /**
-     * Returns the weapon's name.
+     * Returns the token representing this weapon.
+     * <p>
+     * Name tokens are meant to be unique.
      * 
-     * @return the weapon's name
+     * @return the weapon's name token
      */
     public String getNameToken();
 

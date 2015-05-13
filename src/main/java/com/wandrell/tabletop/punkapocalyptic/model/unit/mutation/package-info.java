@@ -14,7 +14,21 @@
  * the License.
  */
 /**
- * API for Unit mutations.
+ * API for unit mutations.
+ * <p>
+ * The
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation
+ * Mutation} serves are the most basic mutation, containing just the name and
+ * cost, while
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.AttributeBonusMutation
+ * AttributeBonusMutation} additionally stores a group of attributes to which
+ * the mutation applies its bonus.
+ * <p>
+ * Additionally, the
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.MutantUnit
+ * MutantUnit} marks a
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.Unit Unit} which may
+ * have mutations.
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit.mutation;
 

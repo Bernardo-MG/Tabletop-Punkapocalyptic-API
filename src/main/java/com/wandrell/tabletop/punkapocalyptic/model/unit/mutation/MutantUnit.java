@@ -20,18 +20,28 @@ import java.util.Collection;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
 
 /**
- * Represents a unit which can have mutations.
+ * Interface for units with mutation.
+ * <p>
+ * This is just a {@link Unit} which can keep a collection of {@link Mutation}
+ * instances.
+ * <p>
+ * If any of these mutations is an
+ * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.AttributeBonusMutation
+ * AttributeBonusMutation} then those bonus are expected to be applied.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
+ * @see Mutation
+ * @see com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.AttributeBonusMutation
+ *      AttributeBonusMutation
  */
 public interface MutantUnit extends Unit {
 
     /**
      * Adds a Mutation to the Unit.
      * <p>
-     * If the mutation modifies the unit in any way, it is expected to apply
-     * this change as soon as it is added.
+     * If any of the mutation is an
+     * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.AttributeBonusMutation
+     * AttributeBonusMutation} then those bonus are expected to be applied.
      * 
      * @param mutation
      *            the Mutation to add
@@ -44,7 +54,7 @@ public interface MutantUnit extends Unit {
     public void clearMutations();
 
     /**
-     * Returns all the mutations from the Unit.
+     * Returns all the mutations from the {@code Unit}.
      * 
      * @return all the mutations
      */
@@ -52,6 +62,11 @@ public interface MutantUnit extends Unit {
 
     /**
      * Removes a Mutation from the Unit.
+     * <p>
+     * If any of the mutation is an
+     * {@link com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.AttributeBonusMutation
+     * AttributeBonusMutation} then those bonus are expected to no longer be
+     * applied.
      * 
      * @param mutation
      *            the Mutation to remove

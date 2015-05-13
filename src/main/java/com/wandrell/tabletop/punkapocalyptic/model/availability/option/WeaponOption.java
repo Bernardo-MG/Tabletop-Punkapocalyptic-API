@@ -21,12 +21,9 @@ import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
 
 /**
- * Indicates the details of a weapon option.
- * <p>
- * This is meant to be used during the Unit setup procedure.
+ * Interface for representing a weapon available inside an availability class.
  * 
  * @author Bernardo Martínez Garrido
- * @version 0.1.0
  */
 public interface WeaponOption {
 
