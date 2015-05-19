@@ -108,6 +108,7 @@
 		<!-- Dependencies versions -->
 		<testng.version>6.8.8</testng.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
+		<tabletop.stats.version>0.1.0-SNAPSHOT</tabletop.stats.version>
 		<!-- Plugins versions -->
 		<plugin.checkstyle.version>2.13</plugin.checkstyle.version>
 		<plugin.compiler.version>3.2</plugin.compiler.version>
@@ -135,6 +136,12 @@
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>tabletop-api</artifactId>
 			<version>${tabletop.version}</version>
+		</dependency>
+		<dependency>
+			<!-- Tabletop Stats -->
+			<groupId>com.wandrell.tabletop</groupId>
+			<artifactId>stats</artifactId>
+			<version>${tabletop.stats.version}</version>
 		</dependency>
 		<dependency>
 			<!-- TestNG -->

@@ -17,7 +17,7 @@ package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
 
 import java.util.EventObject;
 
-import com.wandrell.tabletop.event.ValueChangeEvent;
+import com.wandrell.tabletop.stat.event.ValueChangeEvent;
 
 /**
  * Adapter for the Unit listener.
