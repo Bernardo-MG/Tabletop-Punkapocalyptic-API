@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.punkapocalyptic.model.unit;
 
-import com.wandrell.tabletop.stat.valuebox.ValueBox;
+import com.wandrell.tabletop.stats.valuebox.ValueBox;
 
 /**
  * Interface for grouped units. These are the units which are used bundled,

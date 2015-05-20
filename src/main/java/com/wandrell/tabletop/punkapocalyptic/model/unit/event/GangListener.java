@@ -16,7 +16,7 @@
 package com.wandrell.tabletop.punkapocalyptic.model.unit.event;
 
 import com.wandrell.tabletop.punkapocalyptic.model.event.ValorationListener;
-import com.wandrell.tabletop.stat.event.ValueChangeEvent;
+import com.wandrell.tabletop.stats.event.ValueChangeEvent;
 
 /**
  * Listener for reacting to band related events.
