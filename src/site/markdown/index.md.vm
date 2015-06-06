@@ -1,0 +1,16 @@
+# Punkapocalyptic model API
+
+This library contains an API to create a model for the wargame Punkapocalyptic.
+
+---
+
+---
+
+# About the code
+
+The code is open source and freely accessible. If you want to do any kind of modification just fork it from the repository.
+
+- Java version: ${javaVersion}
+- License: [${license}](./license.html)
+- SCM: [${scmName}](${scmURL})
+- CI: [${ciName}](${ciURL})
